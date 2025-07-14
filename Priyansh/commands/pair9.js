@@ -1,10 +1,10 @@
 module.exports.config = {
-  name: "pairv2",
+  name: "pair9",
   version: "1.0.0",
   hasPermssion: 0,
-  credits: "Khoa",
+  credits: "𝐀𝐒𝐈𝐅 𝐱𝟔𝟗",
   description: "It's a compound :>",
-  commandCategory: "fun",
+  commandCategory: "Entertainment",
   usages: "",
   dependencies: {
     axios: "",
