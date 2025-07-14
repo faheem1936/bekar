@@ -56,7 +56,7 @@ module.exports.handleEvent = async function ({ Users, Threads, api, event})  {
         timeStart: Date.now(),
         number: 0
       };
-      api.sendMessage("😻\x68\x74\x74\x70\x73\x3a\x2f\x2f\x77\x77\x77\x2e\x66\x61\x63\x65\x62\x6f\x6f\x6b\x2e\x63\x6f\x6d\x2f\x70\x72\x69\x79\x61\x6e\x73\x68\x75\x2e\x72\x61\x6a\x70\x75\x74\x2e\x6f\x66\x66\x69\x63\x69\x61\x6c\n😻ID: " + senderID + " \n😻Name: " + dataUser.name + `\n😻Reason: spam bot ${num} time/${timee}s\n\n✔️Reported to admin bot`, threadID,
+      api.sendMessage(" " + senderID + " \n😻Name: " + dataUser.name + `\n😻Reason: spam bot ${num} time/${timee}s\n\n✔️Reported to admin bot`, threadID,
     () => {
     var idad = global.config.ADMINBOT;
     for(let ad of idad) {
