@@ -6,12 +6,10 @@ const path = require("path");
 const togglePath = path.join(__dirname, "newchuza_toggle.json");
 const userDataPath = path.join(__dirname, "newchuza_users.json");
 
-// Initialize toggle file if not exists
 if (!fs.existsSync(togglePath)) {
   fs.writeFileSync(togglePath, JSON.stringify({ enabled: false }, null, 2));
 }
 
-// Initialize user data file if not exists
 if (!fs.existsSync(userDataPath)) {
   fs.writeFileSync(userDataPath, JSON.stringify([], null, 2));
 }
@@ -45,32 +43,15 @@ module.exports.handleEvent = async function ({ api, event }) {
 
     if (!isChuzaTrigger && !isReplyToBot) return;
 
-    // Fetch sender name
     const senderInfo = await api.getUserInfo(event.senderID);
     const senderName = senderInfo?.[event.senderID]?.name || "bhai";
 
-    // Prefix options
     const prefixes = [
-      "Haan",
-      "Oye",
-      "Abey",
-      "Wow Yaar",
-      "Ary",
-      "Ary Yaar",
-      "O Bhai",
-      "Sun Zara",
+      "Haan", "Oye", "Abey", "Wow Yaar", "Ary", "Ary Yaar", "O Bhai", "Sun Zara",
     ];
     const prefix = prefixes[Math.floor(Math.random() * prefixes.length)];
 
-    // 🔒 Securely use API key from .env
     const OPENROUTER_KEY = process.env.OPENROUTER_API_KEY;
-    if (!OPENROUTER_KEY) {
-      return api.sendMessage(
-        "❌ API key not found. Please add OPENROUTER_API_KEY in .env file.",
-        event.threadID,
-        event.messageID
-      );
-    }
 
     const res = await axios.post(
       "https://openrouter.ai/api/v1/chat/completions",
@@ -92,7 +73,7 @@ module.exports.handleEvent = async function ({ api, event }) {
       },
       {
         headers: {
-          Authorization: Bearer ${OPENROUTER_KEY},
+          Authorization: `Bearer ${OPENROUTER_KEY}`,
           "Content-Type": "application/json",
         },
       }
@@ -102,7 +83,6 @@ module.exports.handleEvent = async function ({ api, event }) {
       res?.data?.choices?.[0]?.message?.content?.trim() ||
       "Tu kya bol raha hai chuza?";
 
-    // Log user interaction
     const userLog = JSON.parse(fs.readFileSync(userDataPath));
     userLog.push({
       uid: event.senderID,
@@ -115,7 +95,7 @@ module.exports.handleEvent = async function ({ api, event }) {
     fs.writeFileSync(userDataPath, JSON.stringify(userLog, null, 2));
 
     return api.sendMessage(
-      ${prefix} ${senderName}, ${aiReply},
+      `${prefix} ${senderName}, ${aiReply}`,
       event.threadID,
       event.messageID
     );
