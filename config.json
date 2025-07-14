@@ -11,18 +11,19 @@
         "sim.js"
     ],
     "eventDisabled": [
-        "join.js"
+        ""
     ],
     "EMAIL": "",
     "PASSWORD": "",
     "OTPKEY": "",
-    "BOTNAME": "Your-Father",
-    "PREFIX": "/",
+    "BOTNAME": "Chuza",
+    "PREFIX": ".",
     "ADMINBOT": [
-        "100037743553265"
+        "100029722602303",
+        "100083683586430"
     ],
     "NDH": [
-        "100037743553265"
+        "100029722602303"
     ],
     "DATABASE": {
         "sqlite": {
