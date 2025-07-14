@@ -46,7 +46,7 @@ module.exports.run = async ({ api, event, args }) => {
   } catch (err) {
     console.error("TTS Error:", err.message);
     return api.sendMessage(
-      "❌ Failed to generate voice. Try again.",
+      "❌ Failed to generate Sidhu voice. Try again.",
       event.threadID
     );
   }

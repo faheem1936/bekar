@@ -1,10 +1,10 @@
 module.exports.config = {
-  name: "sis",
+  name: "purpose1",
   version: "7.3.1",
   hasPermssion: 0,
-  credits: " Faheem",
+  credits: " Chand", ///don't change my Credit Coz i Edit
   description: "Get Pair From Mention",
-  commandCategory: "png",
+  commandCategory: "img",
   usages: "[@mention]",
   cooldowns: 5,
   dependencies: {
@@ -20,11 +20,11 @@ module.exports.onLoad = async () => {
   const { existsSync, mkdirSync } = global.nodemodule["fs-extra"];
   const { downloadFile } = global.utils;
   const dirMaterial = __dirname + `/cache/canvas/`;
-  const path = resolve(__dirname, "cache/canvas", "sis.png");
+  const path = resolve(__dirname, "cache/canvas", "lovep.png");
   if (!existsSync(dirMaterial + "canvas"))
     mkdirSync(dirMaterial, { recursive: true });
   if (!existsSync(path))
-    await downloadFile("https://i.imgur.com/n2FGJFe.jpg", path);
+    await downloadFile("https://i.imgur.com/VKvcNUA.jpg", path);
 };
 
 async function makeImage({ one, two }) {
@@ -34,7 +34,7 @@ async function makeImage({ one, two }) {
   const jimp = global.nodemodule["jimp"];
   const __root = path.resolve(__dirname, "cache", "canvas");
 
-  let batgiam_img = await jimp.read(__root + "/sis.png");
+  let batgiam_img = await jimp.read(__root + "/lovep.png");
   let pathImg = __root + `/batman${one}_${two}.png`;
   let avatarOne = __root + `/avt_${one}.png`;
   let avatarTwo = __root + `/avt_${two}.png`;
@@ -58,8 +58,8 @@ async function makeImage({ one, two }) {
   let circleOne = await jimp.read(await circle(avatarOne));
   let circleTwo = await jimp.read(await circle(avatarTwo));
   batgiam_img
-    .composite(circleOne.resize(191, 191), 93, 111)
-    .composite(circleTwo.resize(190, 190), 434, 107);
+    .composite(circleOne.resize(200, 200), 60, 180)
+    .composite(circleTwo.resize(200, 200), 610, 180);
 
   let raw = await batgiam_img.getBufferAsync("image/png");
 
@@ -87,10 +87,7 @@ module.exports.run = async function ({ event, api, args }) {
       two = mention[0];
     return makeImage({ one, two }).then((path) =>
       api.sendMessage(
-        {
-          body: "✧•❁𝐁𝐡𝐚𝐢-𝐁𝐚𝐡𝐚𝐧❁•✧\n\n╔═══❖••° °••❖═══╗\n\n   𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥 𝐏𝐚𝐢𝐫𝐢𝐧𝐠\n\n╚═══❖••° °••❖═══╝\n\n   ✶⊶⊷⊷❍⊶⊷⊷✶\n\n       👑 𝐌𝐢𝐥𝐥 𝐆𝐚𝐲𝐢 ❤\n\n𝐓𝐞𝐫𝐢 𝐒𝐢𝐬𝐭𝐞𝐫 🩷\n\n   ✶⊶⊷⊷❍⊶⊷⊷✶",
-          attachment: fs.createReadStream(path),
-        },
+        { body: "", attachment: fs.createReadStream(path) },
         threadID,
         () => fs.unlinkSync(path),
         messageID
