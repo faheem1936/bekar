@@ -62,15 +62,9 @@ module.exports.handleEvent = async function ({ api, event }) {
     ];
     const prefix = prefixes[Math.floor(Math.random() * prefixes.length)];
 
-    // 🔒 Securely use API key from .env
+    // 🔒 Use API key securely
     const OPENROUTER_KEY = process.env.OPENROUTER_API_KEY;
-    if (!OPENROUTER_KEY) {
-      return api.sendMessage(
-        "❌ API key not found. Please add OPENROUTER_API_KEY in .env file.",
-        event.threadID,
-        event.messageID
-      );
-    }
+    if (!OPENROUTER_KEY) return;
 
     const res = await axios.post(
       "https://openrouter.ai/api/v1/chat/completions",
@@ -154,4 +148,3 @@ module.exports.run = function ({ api, event, args }) {
     event.messageID
   );
 };
-
