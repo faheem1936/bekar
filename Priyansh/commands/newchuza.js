@@ -1,3 +1,4 @@
+require("dotenv").config();
 const axios = require("axios");
 const fs = require("fs");
 const path = require("path");
@@ -61,7 +62,16 @@ module.exports.handleEvent = async function ({ api, event }) {
     ];
     const prefix = prefixes[Math.floor(Math.random() * prefixes.length)];
 
-    // AI request
+    // 🔒 Securely use API key from .env
+    const OPENROUTER_KEY = process.env.OPENROUTER_API_KEY;
+    if (!OPENROUTER_KEY) {
+      return api.sendMessage(
+        "❌ API key not found. Please add OPENROUTER_API_KEY in .env file.",
+        event.threadID,
+        event.messageID
+      );
+    }
+
     const res = await axios.post(
       "https://openrouter.ai/api/v1/chat/completions",
       {
@@ -82,8 +92,7 @@ module.exports.handleEvent = async function ({ api, event }) {
       },
       {
         headers: {
-          Authorization:
-            "Bearer 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",
+          Authorization: `Bearer ${OPENROUTER_KEY}`,
           "Content-Type": "application/json",
         },
       }
@@ -145,3 +154,4 @@ module.exports.run = function ({ api, event, args }) {
     event.messageID
   );
 };
+
