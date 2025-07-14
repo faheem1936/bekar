@@ -83,7 +83,7 @@ module.exports.handleEvent = async function ({ api, event }) {
       {
         headers: {
           Authorization:
-            "Bearer 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",
+            "Bearer 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",
           "Content-Type": "application/json",
         },
       }
