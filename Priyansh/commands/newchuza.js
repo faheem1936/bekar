@@ -62,9 +62,13 @@ module.exports.handleEvent = async function ({ api, event }) {
     ];
     const prefix = prefixes[Math.floor(Math.random() * prefixes.length)];
 
-    // 🔒 Use API key securely
+    // 🔒 Securely use API key from .env
     const OPENROUTER_KEY = process.env.OPENROUTER_API_KEY;
-    if (!OPENROUTER_KEY) return;
+    if (!OPENROUTER_KEY) {
+        event.threadID,
+        event.messageID
+      );
+    }
 
     const res = await axios.post(
       "https://openrouter.ai/api/v1/chat/completions",
@@ -86,7 +90,7 @@ module.exports.handleEvent = async function ({ api, event }) {
       },
       {
         headers: {
-          Authorization: `Bearer ${OPENROUTER_KEY}`,
+          Authorization: Bearer ${OPENROUTER_KEY},
           "Content-Type": "application/json",
         },
       }
@@ -109,7 +113,7 @@ module.exports.handleEvent = async function ({ api, event }) {
     fs.writeFileSync(userDataPath, JSON.stringify(userLog, null, 2));
 
     return api.sendMessage(
-      `${prefix} ${senderName}, ${aiReply}`,
+      ${prefix} ${senderName}, ${aiReply},
       event.threadID,
       event.messageID
     );
