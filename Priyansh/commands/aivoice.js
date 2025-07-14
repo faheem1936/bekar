@@ -1,10 +1,11 @@
+require("dotenv").config();
 const axios = require("axios");
 const fs = require("fs-extra");
 const path = require("path");
 
 module.exports.config = {
   name: "aivoice",
-  version: "1.0.2",
+  version: "1.0.3",
   hasPermission: 0,
   credits: "Faheem King",
   description: "AI reply converted to female Hindi voice with user name",
@@ -18,16 +19,14 @@ module.exports.run = async function ({ api, event, args }) {
   const userMessage = args.join(" ");
 
   if (!userMessage) {
-    return api.sendMessage(
-      "❗ Use: .aivoice [your message]",
-      threadID,
-      messageID
-    );
+    return api.sendMessage("❗ Use: .aivoice [your message]", threadID, messageID);
   }
 
-  const AI_KEY = "ddc-a4f-58cf64b46fd84575a17c351b4dbc7da5"; // A4F GPT-3.5
-  const ELEVEN_KEY = "sk_618d15f034f0f96a52b0d2e27987247312c6a77a0d4ea8fb"; // ElevenLabs key
+  const AI_KEY = process.env.A4F_API_KEY;
+  const ELEVEN_KEY = process.env.ELEVENLABS_API_KEY;
   const VOICE_ID = "ulZgFXalzbrnPUGQGs0S"; // Female Hindi voice
+
+  if (!AI_KEY || !ELEVEN_KEY) return;
 
   let userName = "User";
   try {
@@ -38,7 +37,7 @@ module.exports.run = async function ({ api, event, args }) {
   }
 
   try {
-    // 🧠 Get AI reply
+    // Get AI reply
     const aiRes = await axios.post(
       "https://api.a4f.co/v1/chat/completions",
       {
@@ -61,7 +60,7 @@ module.exports.run = async function ({ api, event, args }) {
     );
 
     const aiTextRaw = aiRes.data.choices[0].message.content;
-    const spokenText = `${userName}, ${aiTextRaw}`; // 👈 Adds name in voice
+    const spokenText = `${userName}, ${aiTextRaw}`;
 
     const voicePath = path.join(__dirname, "hindivoice.mp3");
 
@@ -96,11 +95,5 @@ module.exports.run = async function ({ api, event, args }) {
       messageID
     );
   } catch (err) {
-    console.error("❌ AI Voice Error:", err);
-    return api.sendMessage(
-      "⚠️ Failed to generate voice. Try again later.",
-      threadID,
-      messageID
-    );
-  }
-};
+    console.error("❌ AI Voice Error:", err.message || err);
+    return api.sendMessage("⚠️ Voice generation failed. Try again.", th
