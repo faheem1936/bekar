@@ -65,6 +65,8 @@ module.exports.handleEvent = async function ({ api, event }) {
     // 🔒 Securely use API key from .env
     const OPENROUTER_KEY = process.env.OPENROUTER_API_KEY;
     if (!OPENROUTER_KEY) {
+      return api.sendMessage(
+        "❌ API key not found. Please add OPENROUTER_API_KEY in .env file.",
         event.threadID,
         event.messageID
       );
