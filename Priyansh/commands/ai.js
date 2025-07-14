@@ -1,44 +1,97 @@
 const axios = require("axios");
+const fs = require("fs");
+const path = require("path");
+const request = require("request");
+const tesseract = require("tesseract.js");
+
 module.exports.config = {
-    name: "ai",
-    version: "1.0.0",
-    hasPermssion: 0,
-    credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
-    description: "BlackBoxAi by Priyansh",
-    commandCategory: "ai",
-    usages: "[ask]",
-    cooldowns: 2,
-    dependecies: {
-        "axios": "1.4.0"
-    }
+  name: "ai",
+  version: "2.0.0",
+  hasPermission: 0,
+  credits: "Faheem Akhtar + GPT",
+  description: "AI that responds to text or images starting with 'ai'",
+  commandCategory: "AI",
+  usages: "ai [question] or image with 'ai'",
+  cooldowns: 2,
 };
 
-module.exports.run = async function ({ api, event, args, Users }) {
+module.exports.handleEvent = async function ({ api, event }) {
+  const msg = event.body || "";
+  const lowerMsg = msg.toLowerCase();
 
-  const { threadID, messageID } = event;
+  const hasTextTrigger = lowerMsg.startsWith("ai ");
+  const hasImageTrigger = !msg && event.attachments?.[0]?.type === "photo";
 
-  const query = encodeURIComponent(args.join(" "));
+  if (!hasTextTrigger && !hasImageTrigger) return;
 
-  var name = await Users.getNameUser(event.senderID);
+  const senderInfo = await api.getUserInfo(event.senderID);
+  const senderName = senderInfo?.[event.senderID]?.name || "bhai";
 
-  if (!args[0]) return api.sendMessage("Please type a message...", threadID, messageID );
-  
-  api.sendMessage("Searching for an answer, please wait...", threadID, messageID);
+  let prompt = "";
 
-  try{
+  // 📷 If image only (OCR)
+  if (hasImageTrigger) {
+    const imgUrl = event.attachments[0].url;
+    const imgPath = path.join(__dirname, "ocr_temp.jpg");
 
-    api.setMessageReaction("⌛", event.messageID, () => { }, true);
+    const file = fs.createWriteStream(imgPath);
+    await new Promise((resolve) =>
+      request(imgUrl).pipe(file).on("close", resolve)
+    );
 
-    const res = await axios.get(`https://priyanshuapi.xyz/api/blackboxai?query=${encodeURIComponent(query)}`);
+    const ocrData = await tesseract.recognize(imgPath, "eng+urd", {
+      logger: (m) => null,
+    });
+    prompt = ocrData.data.text.trim();
 
-    const data = res.data.priyansh;
+    fs.unlinkSync(imgPath); // Clean temp file
+    if (!prompt) return;
+  }
 
-    api.sendMessage(data, event.threadID, event.messageID);
+  // 📝 If message starts with "ai "
+  if (hasTextTrigger) {
+    prompt = msg.slice(3).trim();
+    if (!prompt) return;
+  }
 
-    api.setMessageReaction("✅", event.messageID, () => { }, true);
-}
-  catch (error) {
-    console.error('Error fetching package.json:', error);
-  api.sendMessage("An error occurred while fetching data. Please try again later.", event.threadID, event.messageID);
+  try {
+    const res = await axios.post(
+      "https://openrouter.ai/api/v1/chat/completions",
+      {
+        model: "mistralai/mixtral-8x7b-instruct",
+        messages: [
+          {
+            role: "system",
+            content:
+              "Tum Urdu aur English dono samajhne wale AI ho. User ke sawal ya image ke content ka friendly aur madadgaar jawab do.",
+          },
+          {
+            role: "user",
+            content: prompt,
+          },
+        ],
+        temperature: 0.7,
+        max_tokens: 500,
+      },
+      {
+        headers: {
+          Authorization:
+            "Bearer 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",
+          "Content-Type": "application/json",
+        },
+      }
+    );
+
+    const aiReply = res.data.choices[0].message.content.trim();
+    return api.sendMessage(
+      `${senderName}, ${aiReply}`,
+      event.threadID,
+      event.messageID
+    );
+  } catch (err) {
+    console.error("❌ AI Image/Text Error:", err.message || err);
+    return api.sendMessage("❌ AI response failed bhai.", event.threadID);
   }
 };
+
+module.exports.run = () => {};

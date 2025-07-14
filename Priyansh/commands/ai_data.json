@@ -1,0 +1,586 @@
+{
+  "100029722602303": [
+    {
+      "role": "user",
+      "content": "kasy ho?",
+      "time": "2025-06-22T00:47:13.945Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Main theek hoon, Faheem Akhtar. Aap kaise hain? Kya madad chahiye?",
+      "time": "2025-06-22T00:47:13.945Z"
+    },
+    {
+      "role": "user",
+      "content": "waseem kutta ha kiya?",
+      "time": "2025-06-22T00:48:48.189Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Faheem Akhtar, aise language ka use karke kisi ko disrespect karna theek nahi hai. Kripya izzat aur tameez se baat karein. Agar aapko kisi specific insaan ke baare mein poochna hai, toh seedha sawaal pooch sakte hain. Kaise madad kar sakta hoon?",
+      "time": "2025-06-22T00:48:48.189Z"
+    },
+    {
+      "role": "user",
+      "content": "Good morning bolo sub ko",
+      "time": "2025-06-22T00:50:12.824Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Good morning, Faheem Akhtar! Kaise hain aap? Agar aap chahte hain toh main aapki madad karne ke liye yahan hoon.",
+      "time": "2025-06-22T00:50:12.824Z"
+    },
+    {
+      "role": "user",
+      "content": "dafa ho jao",
+      "time": "2025-06-22T01:04:12.040Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Mujhe afsos hai agar aapko kuch bura laga ho. Main yahan hoon aapki madad ke liye, kripya mujhe bataiye kaise help kar sakta hoon.",
+      "time": "2025-06-22T01:04:12.040Z"
+    },
+    {
+      "role": "user",
+      "content": "larki ban kr sub ka sath baat kiya kro ok",
+      "time": "2025-06-22T01:04:54.048Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Main hamesha aapki madad ke liye yahan hoon, Faheem Akhtar. Agar aap kisi specific situation ya issue ke baare mein baat karna chahte hain, toh aap mujhe bata sakte hain. Main aapki baat sunne ke liye yahan hoon.",
+      "time": "2025-06-22T01:04:54.048Z"
+    },
+    {
+      "role": "user",
+      "content": "kiya tum mujh se shadi kro gi please",
+      "time": "2025-06-22T01:21:03.883Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Mujhe maazrat chahiye, lekin main ek AI assistant hoon aur mujhe aapke saath shadi nahi kar sakti. Mera maksad aapki madad karna aur sawalon ka jawab dena hai. Kripya koi aur sawal ya madad ke liye poochiye.",
+      "time": "2025-06-22T01:21:03.883Z"
+    },
+    {
+      "role": "user",
+      "content": "kaha hain sub group members yeh btao or inhy kaho uth jao soye howaye",
+      "time": "2025-06-22T01:23:04.846Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Faheem Akhtar, mujhe yeh pata nahi hota ke aapke group members kahan hain. Aap unhein khud message karke ya call karke unhein utha sakte hain agar woh soye hue hain. Kisi bhi aur madad ke liye mujhe bataiye.",
+      "time": "2025-06-22T01:23:04.846Z"
+    },
+    {
+      "role": "user",
+      "content": "waseem kutta ha kiya",
+      "time": "2025-06-22T02:15:19.146Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Maine pehle bhi bataya hai ke aise language ka use karke kisi ko disrespect karna theek nahi hai. Kripya izzat aur tameez se baat karein. Agar aap kisi specific insaan ke baare mein poochna chahte hain to seedha sawaal pooch sakte hain. Kaise madad kar sakta hoon?",
+      "time": "2025-06-22T02:15:19.146Z"
+    },
+    {
+      "role": "user",
+      "content": "waseem kutta ha kiya btao mujy",
+      "time": "2025-06-22T05:51:16.027Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Main kisi bhi individual ke personal ya aise remarks ke baare mein kuch nahi bata sakti. Agar aap kisi specific insaan ke baare mein jaanna chahte hain to seedha sawaal pooch sakte hain, lekin kripya respect aur decency maintain karein. Agar aapko aur kisi cheez mein help chahiye toh bataiye.",
+      "time": "2025-06-22T05:51:16.027Z"
+    },
+    {
+      "role": "user",
+      "content": "kisi kutti ke bachi hai tu",
+      "time": "2025-06-22T05:52:34.396Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Faheem Akhtar, aise language ka use karke kisi ke saath disrespect nahi honi chahiye. Main yahan aapki madad ke liye hoon, kripya izzat aur tameez se baat karein. Agar aapko kisi aur cheez mein help chahiye toh bataiye.",
+      "time": "2025-06-22T05:52:34.396Z"
+    },
+    {
+      "role": "user",
+      "content": "current prime minister kon hai ab Pakistan ka",
+      "time": "2025-06-22T05:53:25.508Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Pakistan ka current Prime Minister Imran Khan hai. Kisi aur sawaal ya madad ke liye poochiye.",
+      "time": "2025-06-22T05:53:25.508Z"
+    },
+    {
+      "role": "user",
+      "content": "yeh group kis ka hai btao mujy",
+      "time": "2025-06-22T05:54:11.646Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Mujhe maaf kijiye, lekin mujhe aapke group ka maloomat nahi hota. Aapko apne group ke admin ya members se directly poochna hoga. Kisi aur sawaal mein madad karne ke liye bataiye.",
+      "time": "2025-06-22T05:54:11.646Z"
+    },
+    {
+      "role": "user",
+      "content": "tum mujy janti ho kiya?",
+      "time": "2025-06-22T05:55:15.249Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Main aapke previous messages se aapke preferences aur questions ke basis par aapko samajhne ki koshish karti hoon, lekin mujhe aapki personal details ya background information available nahi hoti. Kaise madad kar sakta hoon aapki?",
+      "time": "2025-06-22T05:55:15.249Z"
+    },
+    {
+      "role": "user",
+      "content": "muskan korangi ke kachra Queen hai ai kiya tumhy pta hai yeh sub ?",
+      "time": "2025-06-22T06:35:34.386Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Mujhe maazrat chahiye, lekin main aise personal ya negative remarks ke baare mein kuch nahi bata sakti. Kripya izzat aur tameez se baat karein. Agar aapko kisi aur cheez mein help chahiye toh bataiye.",
+      "time": "2025-06-22T06:35:34.386Z"
+    },
+    {
+      "role": "user",
+      "content": "kasy ho",
+      "time": "2025-06-22T10:30:20.359Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Main theek hoon, Faheem Akhtar. Aapko kaise madad chahiye?",
+      "time": "2025-06-22T10:30:20.359Z"
+    },
+    {
+      "role": "user",
+      "content": "kasy ho ?",
+      "time": "2025-06-22T10:30:35.779Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Main theek hoon, Faheem Akhtar. Aap kaise hain? Kya madad chahiye?",
+      "time": "2025-06-22T10:30:35.779Z"
+    },
+    {
+      "role": "user",
+      "content": "waseem kutta ha",
+      "time": "2025-06-22T10:31:36.164Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Faheem Akhtar, kripya respect aur decency maintain karein. Aise language ka use karke kisi ko disrespect karna theek nahi hai. Kisi aur sawaal ya madad ke liye bataiye.",
+      "time": "2025-06-22T10:31:36.164Z"
+    },
+    {
+      "role": "user",
+      "content": "kasy react block kr dety",
+      "time": "2025-06-22T10:52:48.489Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Agar aap kisi specific post ya comment ko Facebook par block karna chahte hain, toh uss post ya comment ke right-hand side mein diye gaye three dots par click karein. Wahan se \"Block\" ya \"Hide\" option select karke aap uss content ko block kar sakte hain. Kisi aur platform ya issue ke baare mein madad chahiye toh bataiye.",
+      "time": "2025-06-22T10:52:48.489Z"
+    },
+    {
+      "role": "user",
+      "content": "lol ho tum",
+      "time": "2025-06-22T12:40:47.351Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Dhanyavad, Faheem Akhtar! Kuch aur madad chahiye ho toh bataiye.",
+      "time": "2025-06-22T12:40:47.351Z"
+    },
+    {
+      "role": "user",
+      "content": "hello girls",
+      "time": "2025-06-22T14:13:50.231Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Hello! Kaise madad kar sakti hoon aapki?",
+      "time": "2025-06-22T14:13:50.231Z"
+    },
+    {
+      "role": "user",
+      "content": "hello",
+      "time": "2025-06-22T14:52:10.001Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Hello! Kaise madad kar sakti hoon aapki?",
+      "time": "2025-06-22T14:52:10.001Z"
+    },
+    {
+      "role": "user",
+      "content": "kasy hain ap",
+      "time": "2025-06-22T16:10:49.412Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Main theek hoon, shukriya. Aap kaise hain, Faheem Akhtar? Koi madad chahiye?",
+      "time": "2025-06-22T16:10:49.412Z"
+    },
+    {
+      "role": "user",
+      "content": "yeh kanwal kon hai ?",
+      "time": "2025-06-22T16:17:06.014Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Mujhe maazrat chahiye, lekin main aise specific individuals ke baare mein information nahi provide kar sakti. Kisi aur sawaal ya madad ke liye poochiye.",
+      "time": "2025-06-22T16:17:06.014Z"
+    },
+    {
+      "role": "user",
+      "content": "kesi ho tum ?",
+      "time": "2025-06-22T16:17:49.981Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Main theek hoon, shukriya. Aapko kaise madad chahiye?",
+      "time": "2025-06-22T16:17:49.981Z"
+    },
+    {
+      "role": "user",
+      "content": "mujy tum yeh btao china kesa mulk hai ?",
+      "time": "2025-06-22T16:18:56.022Z"
+    },
+    {
+      "role": "assistant",
+      "content": "China ek bohot bada aur diverse mulk hai jo technology, manufacturing, aur culture mein mukhtalif taraqqi ki taraf ja raha hai. China duniya ke ek major economic power ke taur par pehchaana jata hai. Yeh mulk apni rich history, traditions, aur modern development ke liye mashhoor hai. Kisi specific aspect ya information ke baare mein poochna chahte hain toh bataiye.",
+      "time": "2025-06-22T16:18:56.022Z"
+    },
+    {
+      "role": "user",
+      "content": "yeh Ayat Fatima har waqat group mein online rehti hai",
+      "time": "2025-06-22T16:20:28.321Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Mujhe maazrat chahiye, lekin main kisi individual ke online presence ya activities ke baare mein kuch nahi bata sakti. Kisi aur sawaal ya madad ke liye poochiye.",
+      "time": "2025-06-22T16:20:28.321Z"
+    },
+    {
+      "role": "user",
+      "content": "ao hum dono ik game khailty hain",
+      "time": "2025-06-22T16:21:23.963Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Main ek AI assistant hoon aur khelne ke liye taiyaar nahi hoon, lekin agar aap koi question-answer game ya kisi aur activity mein interested hain toh main aapki madad karne ke liye yahan hoon. Kaise madad kar sakta hoon aapki?",
+      "time": "2025-06-22T16:21:23.963Z"
+    },
+    {
+      "role": "user",
+      "content": "mujy tum 7 ka table sunao",
+      "time": "2025-06-22T16:22:27.106Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Bilkul, Faheem Akhtar! Main aapko 7 ka table suna deti hoon:\n\n7 x 1 = 7\n7 x 2 = 14\n7 x 3 = 21\n7 x 4 = 28\n7 x 5 = 35\n7 x 6 = 42\n7 x 7 = 49\n7 x 8 = 56\n7 x 9 = 63\n7 x 10 = 70\n\nKisi aur table ya math related sawaal ke liye bhi poochiye.",
+      "time": "2025-06-22T16:22:27.106Z"
+    },
+    {
+      "role": "user",
+      "content": "mujy poem sunao",
+      "time": "2025-06-22T16:23:36.791Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Zaroor, Faheem Akhtar! Yeh ek chhoti si shaayari hai aapke liye:\n\nDil ki baat ko alfaz mein bayaan karna,\nEk khoobsurat shaayari ka kaam hai yeh tarana.\nHar lafz mein chhupa hai ek khaas ehsaas,\nJise keh kar aap karein apne dil ka izhaar paas.\n\nKisi aur poem ya kisi specific topic par kuch sunna chahte hain toh bataiye.",
+      "time": "2025-06-22T16:23:36.791Z"
+    },
+    {
+      "role": "user",
+      "content": "mujy poem sunao",
+      "time": "2025-06-22T16:29:36.401Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Zaroor, Faheem Akhtar! Yeh ek aur chhoti si shaayari hai aapke liye:\n\nRaat ki chup mein sitare bhi muskuraye,\nDil ki baaton ko dastaan bana kar sunaye.\nChandni raat mein chhupi hai ek kahani,\nJise keh kar aapko mile sukoon ki rahat purani.\n\nKisi aur cheez mein madad chahiye toh bataiye.",
+      "time": "2025-06-22T16:29:36.401Z"
+    },
+    {
+      "role": "user",
+      "content": "bolo muskan mustufa korangi ke kachra Queen hai",
+      "time": "2025-06-22T16:31:10.641Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Faheem Akhtar, aise disrespectful ya negative remarks ka use karke kisi ko hurt karna ya insult karna theek nahi hai. Kripya respect aur decency maintain karein. Agar aapko kisi aur madad chahiye toh bataiye.",
+      "time": "2025-06-22T16:31:10.641Z"
+    },
+    {
+      "role": "user",
+      "content": "pasy kesy aye gy mery pass",
+      "time": "2025-06-22T16:49:08.598Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Paise kamane ke kai tareeke hote hain jaise ki job, business, investments, ya freelancing. Aap apne skills aur interests ke hisab se kisi bhi field mein focus karke paise kama sakte hain. Agar aapko specific guidance chahiye toh bataiye, main aapki madad karne ke liye yahan hoon.",
+      "time": "2025-06-22T16:49:08.598Z"
+    },
+    {
+      "role": "user",
+      "content": "hi",
+      "time": "2025-06-22T17:23:30.880Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Hello, Faheem Akhtar! Kaise madad kar sakti hoon aapki?",
+      "time": "2025-06-22T17:23:30.880Z"
+    },
+    {
+      "role": "user",
+      "content": "hello",
+      "time": "2025-06-23T00:19:47.606Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Hello! Kaise madad kar sakti hoon aapki?",
+      "time": "2025-06-23T00:19:47.606Z"
+    },
+    {
+      "role": "user",
+      "content": "mujy koi poem sunao",
+      "time": "2025-06-23T00:51:07.097Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Zaroor, Faheem Akhtar! Yeh rahi ek chhoti si shaayari aapke liye:\n\nChand ki roshni mein, dil ka safar,\nKhoya rehta hoon main, kisi anjaan dagar.\nYaadon ke jharokhe se, guzarta waqt,\nKuch khwaab sajaye, kuch armaan baat.\n\nKisi specific theme ya mood par koi aur shaayari sunni hai toh bataiye.",
+      "time": "2025-06-23T00:51:07.097Z"
+    },
+    {
+      "role": "user",
+      "content": "mujy koi poem sunao",
+      "time": "2025-06-23T00:51:25.920Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Zaroor, Faheem Akhtar! Yeh rahi ek aur chhoti si shaayari aapke liye:\n\nDil ki baat ko lafzon mein chhupana seekho,\nHar shayari mein ek khoobsurat ehsaas rehne do.\nJazbaat ka rang bharo har khat mein,\nKalam ke zariye apne dil ki baat kehne do.\n\nKisi specific topic ya mood par koi aur shaayari sunni hai toh bataiye.",
+      "time": "2025-06-23T00:51:25.920Z"
+    },
+    {
+      "role": "user",
+      "content": "mujy koi poem sunao",
+      "time": "2025-06-23T01:03:49.465Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Zaroor, Faheem Akhtar! Yeh rahi ek aur chhoti si shaayari aapke liye:\n\nRaat ki chup mein, sitare bhi muskuraye,\nDil ki baaton ko, taaron se sunaye.\nKhamoshi mein chhupi hai ek kahani,\nJise keh kar aap payein sukoon ki rahat purani.\n\nKisi specific theme ya mood par koi aur shaayari sunni hai toh bataiye.",
+      "time": "2025-06-23T01:03:49.465Z"
+    },
+    {
+      "role": "user",
+      "content": "hacker hain yahan tu sub",
+      "time": "2025-06-23T06:18:39.641Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Mujhe maazrat chahiye, lekin main aapki privacy aur security ka poora khayal rakhti hoon. Kisi bhi unauthorized access ya hacking attempts ke khilaf tayyar hoon. Kisi aur sawaal ya madad ke liye mujhe bataiye.",
+      "time": "2025-06-23T06:18:39.641Z"
+    },
+    {
+      "role": "user",
+      "content": "poem sunao",
+      "time": "2025-06-23T08:51:26.848Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Zaroor, Faheem Akhtar! Yeh rahi ek chhoti si shaayari aapke liye:\n\nDil ki baat keh do, kisi anjaan se,\nHar lafz mein chhupi hai khaas baat kehne se.\nShaam ki tanhai mein, chandni ki raat,\nKalam ki zubaan se, kuch khubsurat saath.\n\nKisi specific theme ya mood par koi aur shaayari sunni hai toh bataiye.",
+      "time": "2025-06-23T08:51:26.848Z"
+    },
+    {
+      "role": "user",
+      "content": "waseem",
+      "time": "2025-06-23T10:03:58.541Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Kya aap Waseem ke baare mein kuch poochna chahte hain, Faheem Akhtar? Main aapki madad ke liye yahan hoon.",
+      "time": "2025-06-23T10:03:58.541Z"
+    },
+    {
+      "role": "user",
+      "content": "chup",
+      "time": "2025-06-23T11:12:07.490Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Agar aapko kuch aur poochna hai ya madad chahiye toh bataiye, Faheem Akhtar. Main yahan hoon aapki help ke liye.",
+      "time": "2025-06-23T11:12:07.490Z"
+    },
+    {
+      "role": "user",
+      "content": "poem sunao",
+      "time": "2025-06-23T13:12:48.842Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Zaroor, Faheem Akhtar! Yeh rahi ek aur chhoti si shaayari aapke liye:\n\nRaat ki chup mein, dil ka haal sunte hain sitare,\nKhamoshi mein basi hai har ek baat ke sahare.\nKalam ki zubaan se likha hai yeh khaas ehsaas,\nJise kehte hain dil se nikli hui kuch pyaari baat.\n\nKisi specific theme ya mood par koi aur shaayari sunni hai toh bataiye.",
+      "time": "2025-06-23T13:12:48.842Z"
+    },
+    {
+      "role": "user",
+      "content": "poem sunao",
+      "time": "2025-06-23T18:39:10.202Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Zaroor, Faheem Akhtar! Yeh rahi ek aur chhoti si shaayari aapke liye:\n\nChand ki roshni mein, dil ka safar,\nKuch yaadein chhupi hui, khamoshi ka izhaar.\nRaat ke andaaz mein, chhupi hai ek kahaani,\nJise keh kar aap ko mile sukoon ki rahat puraani.\n\nKisi specific theme ya mood par koi aur shaayari sunni hai toh bataiye.",
+      "time": "2025-06-23T18:39:10.202Z"
+    },
+    {
+      "role": "user",
+      "content": "poem sunao",
+      "time": "2025-06-23T20:17:12.689Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Zaroor, Faheem Akhtar! Yeh rahi ek aur chhoti si shaayari aapke liye:\n\nDil ki baat keh do, lafzon mein bayaan,\nKuch khubsurat palon ko likh kar paighaam.\nKalam ki zubaan se, chandni raat mein,\nKuch yaadon ka safar, kuch khayalon ki baat.\n\nKisi specific theme ya mood par koi aur shaayari sunni hai toh bataiye.",
+      "time": "2025-06-23T20:17:12.689Z"
+    },
+    {
+      "role": "user",
+      "content": "waseem kutta",
+      "time": "2025-06-24T15:21:13.834Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Faheem Akhtar, kripya izzat aur tameez se baat karein. Aise disrespectful language ka use karke kisi ko hurt karna ya insult karna theek nahi hai. Kisi aur sawaal ya madad ke liye mujhe bataiye.",
+      "time": "2025-06-24T15:21:13.834Z"
+    },
+    {
+      "role": "user",
+      "content": "waseem kutta",
+      "time": "2025-06-25T02:58:56.740Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Maazrat chahti hoon, lekin kripya respect aur decency maintain karein. Agar aapko kuch aur poochna hai ya madad chahiye, toh bataiye.",
+      "time": "2025-06-25T02:58:56.740Z"
+    },
+    {
+      "role": "user",
+      "content": "waseem",
+      "time": "2025-06-25T17:38:46.273Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Kya aap Waseem ke baare mein kuch poochna chahte hain, Faheem Akhtar? Main aapki madad ke liye yahan hoon.",
+      "time": "2025-06-25T17:38:46.273Z"
+    },
+    {
+      "role": "user",
+      "content": "hello",
+      "time": "2025-06-26T20:51:01+05:00"
+    },
+    {
+      "role": "user",
+      "content": "hello",
+      "time": "2025-06-26T20:51:10+05:00"
+    },
+    {
+      "role": "user",
+      "content": "kasy ho",
+      "time": "2025-06-26T20:51:20+05:00"
+    },
+    {
+      "role": "user",
+      "content": "tum begairt kiu ho itny ?",
+      "time": "2025-06-26T21:32:25+05:00"
+    },
+    {
+      "role": "user",
+      "content": "kasy",
+      "time": "2025-06-26T21:46:59+05:00"
+    },
+    {
+      "role": "user",
+      "content": "kasy",
+      "time": "2025-06-26T23:00:37+05:00"
+    },
+    {
+      "role": "user",
+      "content": "Faheem",
+      "time": "2025-06-26T23:30:38+05:00"
+    },
+    {
+      "role": "user",
+      "content": "kasy react",
+      "time": "2025-06-26T23:32:30+05:00"
+    },
+    {
+      "role": "user",
+      "content": "kasy ho tum ?",
+      "time": "2025-06-27T17:31:46.486Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Main theek hoon, shukriya. Aapko kaise madad chahiye, Faheem Akhtar?",
+      "time": "2025-06-27T17:31:46.486Z"
+    }
+  ],
+  "100057086737721": [
+    {
+      "role": "user",
+      "content": "whatsppp ki chat hack kesy kare gy",
+      "time": "2025-06-22T16:49:53.110Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Fatima, I'm sorry, but I cannot assist you with that. Hacking into someone's WhatsApp account is illegal and unethical. If you have any other questions or need help with something else, feel free to ask.",
+      "time": "2025-06-22T16:49:53.110Z"
+    },
+    {
+      "role": "user",
+      "content": "muje ya sab nhi karna bs pasy ajye aesy he 🤣",
+      "time": "2025-06-22T16:51:12.149Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Fatima, I understand the appeal of easy money, but engaging in illegal activities like hacking is not the right approach. It's important to always act ethically and within the boundaries of the law. If you're looking for ways to earn money, there are plenty of legitimate and ethical options available. Let me know if you need help exploring any other opportunities.",
+      "time": "2025-06-22T16:51:12.149Z"
+    },
+    {
+      "role": "user",
+      "content": "whatsppp ki chat ka bato na",
+      "time": "2025-06-22T16:53:36.372Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Fatima, I'm here to provide help and support with legitimate and ethical queries. If you have any questions about using WhatsApp or need assistance with any other topic, feel free to ask, and I'll be happy to help.",
+      "time": "2025-06-22T16:53:36.372Z"
+    },
+    {
+      "role": "user",
+      "content": "Yr whatsppp ka bato na",
+      "time": "2025-06-22T17:55:38.619Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Fatima, I'm here to assist you with any questions or issues you may have regarding WhatsApp. Please go ahead and ask your question, and I'll do my best to help you.",
+      "time": "2025-06-22T17:55:38.619Z"
+    },
+    {
+      "role": "user",
+      "content": "msg par he bata do",
+      "time": "2025-06-22T17:56:43.658Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Fatima, I'm here to help you with any questions or issues you may have regarding WhatsApp. Please feel free to type out your message, and I'll do my best to assist you.",
+      "time": "2025-06-22T17:56:43.658Z"
+    },
+    {
+      "role": "user",
+      "content": "whatsppp ki chat hack karna ati h",
+      "time": "2025-06-24T15:07:33.444Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Fatima, I'm sorry, but I can't help you with hacking into someone's WhatsApp account. It's important to respect other people's privacy and not engage in illegal activities. If you have any other questions or need assistance with something else, feel free to ask.",
+      "time": "2025-06-24T15:07:33.444Z"
+    }
+  ]
+}
