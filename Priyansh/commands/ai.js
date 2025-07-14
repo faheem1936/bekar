@@ -1,3 +1,4 @@
+require("dotenv").config();
 const axios = require("axios");
 const fs = require("fs");
 const path = require("path");
@@ -29,7 +30,7 @@ module.exports.handleEvent = async function ({ api, event }) {
 
   let prompt = "";
 
-  // 📷 If image only (OCR)
+  // 📷 OCR from image
   if (hasImageTrigger) {
     const imgUrl = event.attachments[0].url;
     const imgPath = path.join(__dirname, "ocr_temp.jpg");
@@ -40,18 +41,27 @@ module.exports.handleEvent = async function ({ api, event }) {
     );
 
     const ocrData = await tesseract.recognize(imgPath, "eng+urd", {
-      logger: (m) => null,
+      logger: () => null,
     });
-    prompt = ocrData.data.text.trim();
 
-    fs.unlinkSync(imgPath); // Clean temp file
+    prompt = ocrData.data.text.trim();
+    fs.unlinkSync(imgPath);
     if (!prompt) return;
   }
 
-  // 📝 If message starts with "ai "
+  // 📝 Extract text after "ai "
   if (hasTextTrigger) {
     prompt = msg.slice(3).trim();
     if (!prompt) return;
+  }
+
+  const API_KEY = process.env.OPENROUTER_API_KEY;
+  if (!API_KEY) {
+    return api.sendMessage(
+      "❌ API key missing. Please set OPENROUTER_API_KEY in .env file.",
+      event.threadID,
+      event.messageID
+    );
   }
 
   try {
@@ -75,8 +85,7 @@ module.exports.handleEvent = async function ({ api, event }) {
       },
       {
         headers: {
-          Authorization:
-            "Bearer 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",
+          Authorization: `Bearer ${API_KEY}`,
           "Content-Type": "application/json",
         },
       }
