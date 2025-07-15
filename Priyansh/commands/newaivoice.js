@@ -6,7 +6,7 @@ const textToSpeech = require("@google-cloud/text-to-speech");
 const gTTS = require("gtts");
 
 module.exports.config = {
-  name: "newaivoice",
+  name: "newaivoice2",
   version: "2.0.0",
   hasPermission: 0,
   credits: "Faheem King + ChatGPT Merge",
