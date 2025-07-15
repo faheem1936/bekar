@@ -15,7 +15,7 @@ if (!fs.existsSync(userDataPath)) {
 }
 
 module.exports.config = {
-  name: "newchuza",
+  name: "newchuza2",
   version: "3.3.0",
   hasPermission: 0,
   credits: "Faheem Akhtar",
