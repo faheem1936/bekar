@@ -1,26 +1,26 @@
-require("dotenv").config();
+ require("dotenv").config();
 const axios = require("axios");
-const fs = require("fs");
+const fs = require("fs-extra");
 const path = require("path");
 
 const togglePath = path.join(__dirname, "newchuza_toggle.json");
 const userDataPath = path.join(__dirname, "newchuza_users.json");
 
+// 🛡️ Ensure toggle + log files exist
 if (!fs.existsSync(togglePath)) {
   fs.writeFileSync(togglePath, JSON.stringify({ enabled: false }, null, 2));
 }
-
 if (!fs.existsSync(userDataPath)) {
   fs.writeFileSync(userDataPath, JSON.stringify([], null, 2));
 }
 
 module.exports.config = {
   name: "newchuza",
-  version: "3.2.0",
+  version: "3.3.0",
   hasPermission: 0,
   credits: "Faheem Akhtar",
-  description: "Reply to chuza or bot reply triggers (global on/off)",
-  commandCategory: "AI",
+  description: "Aggressive reply to chuza or replies to bot messages (AI-based)",
+  commandCategory: "ai",
   usages: "[on/off]",
   cooldowns: 2,
 };
@@ -52,8 +52,12 @@ module.exports.handleEvent = async function ({ api, event }) {
     const prefix = prefixes[Math.floor(Math.random() * prefixes.length)];
 
     const OPENROUTER_KEY = process.env.OPENROUTER_API_KEY;
+    if (!OPENROUTER_KEY) {
+      console.warn("⚠️ OPENROUTER_API_KEY is missing in env.");
+      return;
+    }
 
-    const res = await axios.post(
+    const response = await axios.post(
       "https://openrouter.ai/api/v1/chat/completions",
       {
         model: "nousresearch/hermes-3-llama-3.1-70b",
@@ -80,11 +84,12 @@ module.exports.handleEvent = async function ({ api, event }) {
     );
 
     const aiReply =
-      res?.data?.choices?.[0]?.message?.content?.trim() ||
+      response?.data?.choices?.[0]?.message?.content?.trim() ||
       "Tu kya bol raha hai chuza?";
 
-    const userLog = JSON.parse(fs.readFileSync(userDataPath));
-    userLog.push({
+    // Log to file
+    const logData = fs.readJSONSync(userDataPath);
+    logData.push({
       uid: event.senderID,
       name: senderName,
       message: messageText,
@@ -92,7 +97,7 @@ module.exports.handleEvent = async function ({ api, event }) {
       threadID: event.threadID,
       time: new Date().toLocaleString("en-PK", { timeZone: "Asia/Karachi" }),
     });
-    fs.writeFileSync(userDataPath, JSON.stringify(userLog, null, 2));
+    fs.writeFileSync(userDataPath, JSON.stringify(logData, null, 2));
 
     return api.sendMessage(
       `${prefix} ${senderName}, ${aiReply}`,
@@ -105,12 +110,12 @@ module.exports.handleEvent = async function ({ api, event }) {
 };
 
 module.exports.run = function ({ api, event, args }) {
-  const toggle = JSON.parse(fs.readFileSync(togglePath));
   const status = args[0]?.toLowerCase();
+  const toggle = fs.readJSONSync(togglePath);
 
   if (status === "on") {
     toggle.enabled = true;
-    fs.writeFileSync(togglePath, JSON.stringify(toggle, null, 2));
+    fs.writeJSONSync(togglePath, toggle, { spaces: 2 });
     return api.sendMessage(
       "✅ newchuza globally ON ho gaya bhai.",
       event.threadID,
@@ -120,7 +125,7 @@ module.exports.run = function ({ api, event, args }) {
 
   if (status === "off") {
     toggle.enabled = false;
-    fs.writeFileSync(togglePath, JSON.stringify(toggle, null, 2));
+    fs.writeJSONSync(togglePath, toggle, { spaces: 2 });
     return api.sendMessage(
       "❌ newchuza globally OFF kar diya gaya bhai.",
       event.threadID,
@@ -129,7 +134,7 @@ module.exports.run = function ({ api, event, args }) {
   }
 
   return api.sendMessage(
-    "📌 Use: .newchuza on/off",
+    "📌 Use: .newchuza on OR .newchuza off",
     event.threadID,
     event.messageID
   );
