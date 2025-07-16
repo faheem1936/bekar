@@ -1,1 +1,485 @@
-function _0x378b(){const _0x2c1640=['neonv2','font','https://priyanshu.apitextpro.repl.co/api/textpro?number=87&text=','rainbow-king','https://priyanshu.apitextpro.repl.co/api/textpro?number=20&text=','238ZbABzv','mat-neon','arraybuffer','fish','2292FQQxwJ','https://priyanshu.apitextpro.repl.co/api/textpro?number=116&text=','purple-shiny','https://priyanshu.apitextpro.repl.co/api/textpro?number=121&text=','.png','christmus','sand','https://priyanshu.apitextpro.repl.co/api/textpro?number=190&text=','black-diamond','113260prjxFf','2024gif','https://priyanshu.apitextpro.repl.co/api/textpro?number=97&text=','christmusv2','leaser-neon','logo','sky','dot-font','war','blue-mat','https://priyanshu.apitextpro.repl.co/api/textpro?number=91&text=','https://priyanshu.apitextpro.repl.co/api/textpro?number=108&text=','woodv2','bronze','ghost-theme','icev2','neon-love','https://priyanshu.apitextpro.repl.co/api/textpro?number=168&text=','https://priyanshu.apitextpro.repl.co/api/textpro?number=202&text=','rainbow-sky','https://priyanshu.apitextpro.repl.co/api/textpro?number=207&text=','pinkcandy','Logo\x20list\x20-\x20Page\x202:\x0a31.\x20Black-diamond\x0a32.\x20Blackpinkv2\x0a33.\x20Rainbow-sky\x0a34.\x20Ring-light\x0a35.\x20Goldenv2\x0a36.\x20Sparkle\x0a37.\x20Golden\x0a38.\x20Newpurple\x0a39.\x20Wood\x0a40.\x20Goldv2\x0a41.\x20woodv2\x0a42.\x20Marble\x0a43.\x20Bloodboard\x0a44.\x20Drugs\x0a45.\x20Chritsmus\x0a46.\x20Foog\x0a47.\x20Neon-rainbow\x0a48.\x20Green-leaser\x0a50.\x20Lightbubble\x0a51.\x20Leaser-neon\x0a52.\x203d-box\x0a53.\x20Thunderv2\x0a54.\x20Fish\x0a55.\x20Jewerly\x0a56.\x20Jewerlyv2\x0a57.\x20Blue-mat\x0a58.\x20Stone-wood\x0a59.\x20Jokerlogo\x0a60.\x20Wolflogo\x0a61.\x20Premium\x0a\x20✨Logo\x20list\x20made\x20by\x20𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡\x20𝐑𝐚𝐣𝐩𝐮𝐭\x20using\x20Textpro\x20🌷\x0a\x0aPAGE\x202\x20-\x203','https://priyanshu.apitextpro.repl.co/api/textpro?number=184&text=','https://priyanshu.apitextpro.repl.co/api/textpro?number=45&text=','https://priyanshu.apitextpro.repl.co/api/textpro?number=29&text=','✨Here\x27s\x20your\x20Logo\x20created\x20by\x0a\x20\x20𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡\x20𝐑𝐚𝐣𝐩𝐮𝐭\x20using\x20Textpro\x20🌷','sunset','https://priyanshu.apitextpro.repl.co/api/textpro?number=100&text=','ghost-green','141837YxsFSx','https://priyanshu.apitextpro.repl.co/api/textpro?number=42&text=','https://priyanshu.apitextpro.repl.co/api/textpro?number=61&text=','sparkle','config','/cache/','goldv2','https://priyanshu.apitextpro.repl.co/api/textpro?number=5&text=','drugs','https://priyanshu.apitextpro.repl.co/api/textpro?number=66&text=','https://priyanshu.apitextpro.repl.co/api/textpro?number=198&text=','premium-king','wolflogo','blackpink','rainbow-drop','wood','jewerlyv2','newpurple','goldenv2','sendMessage','toLowerCase','https://priyanshu.apitextpro.repl.co/api/textpro?number=68&text=','https://priyanshu.apitextpro.repl.co/api/textpro?number=196&text=','634064coaxWc','https://priyanshu.apitextpro.repl.co/api/textpro?number=85&text=','blackpinkv2','thunder','3d-dragon','neon-rainbow','gold-font','1.0','strawberry','40OexbFU','neon-pink','greenleaf','https://priyanshu.apitextpro.repl.co/api/textpro?number=80&text=','Processing\x20your\x20textpro\x20image,\x20please\x20wait...','https://priyanshu.apitextpro.repl.co/api/textpro?number=76&text=','https://priyanshu.apitextpro.repl.co/api/textpro?number=84&text=','utf-8','Priyansh\x20Rajput','relics','textpro','get','https://priyanshu.apitextpro.repl.co/api/textpro?number=192&text=','paintingv2','beachv3','21LyALhu','from','length','bluish','https://priyanshu.apitextpro.repl.co/api/textpro?number=206&text=','https://priyanshu.apitextpro.repl.co/api/textpro?number=54&text=','bloodboard','ballonv2','https://priyanshu.apitextpro.repl.co/api/textpro?number=93&text=','list','agni','https://priyanshu.apitextpro.repl.co/api/textpro?number=21&text=','https://priyanshu.apitextpro.repl.co/api/textpro?number=189&text=','https://priyanshu.apitextpro.repl.co/api/textpro?number=110&text=','slice','https://priyanshu.apitextpro.repl.co/api/textpro?number=13&text=','https://priyanshu.apitextpro.repl.co/api/textpro?number=194&text=','103761izAYqB','unlinkSync','axios','https://priyanshu.apitextpro.repl.co/api/textpro?number=26&text=','https://priyanshu.apitextpro.repl.co/api/textpro?number=166&text=','https://priyanshu.apitextpro.repl.co/api/textpro?number=50&text=','purple','green-diamond','data','birthday','https://priyanshu.apitextpro.repl.co/api/textpro?number=43&text=','4735907kgQSbG','https://priyanshu.apitextpro.repl.co/api/textpro?number=111&text=','https://priyanshu.apitextpro.repl.co/api/textpro?number=193&text=','exports','https://priyanshu.apitextpro.repl.co/api/textpro?number=89&text=','painting','https://priyanshu.apitextpro.repl.co/api/textpro?number=22&text=','https://priyanshu.apitextpro.repl.co/api/textpro?number=27&text=','strawberryv2','2024','https://priyanshu.apitextpro.repl.co/api/textpro?number=197&text=','https://priyanshu.apitextpro.repl.co/api/textpro?number=78&text=','https://priyanshu.apitextpro.repl.co/api/textpro?number=182&text=','pinkv4','Invalid\x20page\x20number!\x20Please\x20use\x20\x22list\x201\x22\x20or\x20\x22list\x202\x22\x20or\x20\x22list\x203\x20in\x20the\x20total\x20of\x20list\x20there\x20are\x2092\x20textpro\x20logo\x20for\x20now.\x22.','755964CVyGlh','Make\x20your\x20own\x20logo\x20using\x20textpro','https://priyanshu.apitextpro.repl.co/api/textpro?number=183&text=','3d-box','stone-wood','https://priyanshu.apitextpro.repl.co/api/textpro?number=4&text=','rust-metal','jokerlogo','Invalid\x20command\x20format!\x20Use:Textpro\x20list\x20(page\x20number)\x20or\x20textpro\x20(logo)\x20(text)','https://priyanshu.apitextpro.repl.co/api/textpro?number=165&text=','balloon','createReadStream','https://priyanshu.apitextpro.repl.co/api/textpro?number=175&text=','silver','writeFileSync','https://priyanshu.apitextpro.repl.co/api/textpro?number=161&text=','eid','neon-heart','https://priyanshu.apitextpro.repl.co/api/textpro?number=71&text=','ring','https://priyanshu.apitextpro.repl.co/api/textpro?number=59&text=','thunderv2','black-metal','12KnMAVM','https://priyanshu.apitextpro.repl.co/api/textpro?number=74&text=','Logo\x20list\x20-\x20Page\x203:\x0a62.\x20Ghost-theme\x0a63.\x20Rainbow-king\x0a64.\x20Pink-king\x0a65.\x202024gif\x0a66.\x202024\x0a67.\x20Mat-neon\x0a68.\x20Awesome\x0a69.\x20Icev2\x0a70.\x20Painitngv2\x0a71.\x20Neon-pink\x0a72.\x20Neonv2\x0a73.\x20Thunder\x0a74.\x20Strawberryv2\x0a75.\x20Blackpink\x0a76.\x20Font\x0a77.\x20Pinkcandy\x0a78.\x20Gold-font\x0a79.\x20Silver\x0a80.\x20Purple\x0a81.\x20Strawberry\x0a82.\x20Rainbow-drop\x0a83.\x20Rainbow-box\x0a84.\x20Purple-shiny\x0a85.\x20Agni\x0a86.\x20Green-diamond\x0a87.\x20Bronze\x0a88.\x20Balloon\x0a89.\x20Balloonv2\x0a90.\x20Unknown\x0a91.\x20Ring\x0a92.\x20Pinkv4\x0a\x20✨Logo\x20list\x20made\x20by\x20𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡\x20𝐑𝐚𝐣𝐩𝐮𝐭\x20using\x20Textpro\x20🌷','https://priyanshu.apitextpro.repl.co/api/textpro?number=105&text=','ghostfont','https://priyanshu.apitextpro.repl.co/api/textpro?number=191&text=','https://priyanshu.apitextpro.repl.co/api/textpro?number=95&text=','unknown','https://priyanshu.apitextpro.repl.co/api/textpro?number=154&text=','https://priyanshu.apitextpro.repl.co/api/textpro?number=204&text=','https://priyanshu.apitextpro.repl.co/api/textpro?number=94&text='];_0x378b=function(){return _0x2c1640;};return _0x378b();}const _0x24d2e6=_0x4501;(function(_0x41036e,_0x41cdf0){const _0x5a9687=_0x4501,_0x4d301c=_0x41036e();while(!![]){try{const _0x4b1ca6=parseInt(_0x5a9687(0x16d))/0x1*(parseInt(_0x5a9687(0x169))/0x2)+-parseInt(_0x5a9687(0x194))/0x3*(-parseInt(_0x5a9687(0x159))/0x4)+parseInt(_0x5a9687(0x176))/0x5+-parseInt(_0x5a9687(0x142))/0x6+-parseInt(_0x5a9687(0x1c3))/0x7*(-parseInt(_0x5a9687(0x1ab))/0x8)+parseInt(_0x5a9687(0x1d4))/0x9*(parseInt(_0x5a9687(0x1b4))/0xa)+-parseInt(_0x5a9687(0x1df))/0xb;if(_0x4b1ca6===_0x41cdf0)break;else _0x4d301c['push'](_0x4d301c['shift']());}catch(_0x4c3d24){_0x4d301c['push'](_0x4d301c['shift']());}}}(_0x378b,0x282f4));function _0x4501(_0x471ff0,_0x102890){const _0x378b6e=_0x378b();return _0x4501=function(_0x450133,_0x3811a2){_0x450133=_0x450133-0x136;let _0xba574d=_0x378b6e[_0x450133];return _0xba574d;},_0x4501(_0x471ff0,_0x102890);}const axios=require(_0x24d2e6(0x1d6)),request=require('request'),fs=require('fs-extra');module['exports'][_0x24d2e6(0x198)]={'name':_0x24d2e6(0x1be),'version':_0x24d2e6(0x1b2),'hasPermssion':0x0,'credits':_0x24d2e6(0x1bc),'description':_0x24d2e6(0x143),'usePrefix':!![],'commandCategory':_0x24d2e6(0x17b),'usages':'Textpro\x20list\x20(page\x20number)\x20or\x20textpro\x20(logo)\x20(text)','cooldowns':0x2},module[_0x24d2e6(0x136)]['run']=async function({api:_0x41d78e,event:_0x251271,args:_0x13637d,Users:_0x3c9d08}){const _0x5398dc=_0x24d2e6;let {messageID:_0x40d86d,senderID:_0x478da0,threadID:_0x33a851}=_0x251271;if(_0x13637d[_0x5398dc(0x1c5)]>=0x2&&_0x13637d[0x0][_0x5398dc(0x1a8)]()===_0x5398dc(0x1cc)){let _0x366777=parseInt(_0x13637d[0x1]);switch(_0x366777){case 0x1:return _0x41d78e[_0x5398dc(0x1a7)]('Logo\x20list\x20-\x20Page\x201:\x0a1.\x20Premium-king\x0a2.\x20Sand\x0a3.\x20Sky\x0a4.\x20Wallpant\x0a5.\x20Beachv2\x0a6.\x20Painting\x0a7.\x20Black-metal\x0a8.\x20Sketch\x0a9.\x20Glitch-neon\x0a10.\x20War\x0a11.\x20Ghost-green\x0a12.\x20Candyv2\x0a13.\x20Christmusv2\x0a14.\x20Metalv2\x0a15.\x20Relics\x0a16.\x203d-dragon\x0a17.\x20Rust-metal\x0a18.\x20Woodv2\x0a19.\x20Beachv3\x0a20.\x20Neon-love\x0a21.\x20Neon-heart\x0a22.\x20Birthday\x0a23.\x20Dot-font\x0a24.\x20Eid\x0a25.\x20Sunset\x0a26.\x20Skyfont\x0a27.\x20Bluish\x0a28.\x20Beachfont\x0a29.\x20Ghostfont\x0a30.\x20Greenleaf\x0a\x20✨Logo\x20list\x20made\x20by\x20𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡\x20𝐑𝐚𝐣𝐩𝐮𝐭\x20using\x20Textpro\x20🌷\x0a\x0aPAGE\x201\x20-\x203',_0x33a851,_0x40d86d);case 0x2:return _0x41d78e[_0x5398dc(0x1a7)](_0x5398dc(0x18c),_0x33a851,_0x40d86d);case 0x3:return _0x41d78e[_0x5398dc(0x1a7)](_0x5398dc(0x15b),_0x33a851,_0x40d86d);default:return _0x41d78e['sendMessage'](_0x5398dc(0x141),_0x33a851,_0x40d86d);}}if(_0x13637d[_0x5398dc(0x1c5)]<0x2)return _0x41d78e['sendMessage'](_0x5398dc(0x14a),_0x33a851,_0x40d86d);let _0x33e9ff=_0x13637d[0x0][_0x5398dc(0x1a8)](),_0x9cd3ca=_0x13637d[_0x5398dc(0x1d1)](0x1)['join']('\x20'),_0x30c2ee=__dirname+(_0x5398dc(0x199)+_0x33e9ff+'_'+_0x9cd3ca+_0x5398dc(0x171)),_0x4e9536,_0x206f0e;switch(_0x33e9ff){case _0x5398dc(0x19f):_0x4e9536=_0x5398dc(0x166)+_0x9cd3ca,_0x206f0e='✨Here\x27s\x20your\x20Logo\x20created\x20by\x0a\x20\x20𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡\x20𝐑𝐚𝐣𝐩𝐮𝐭\x20using\x20Textpro\x20🌷';break;case _0x5398dc(0x173):_0x4e9536=_0x5398dc(0x137)+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x17c):_0x4e9536=_0x5398dc(0x1cb)+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case'wallpant':_0x4e9536=_0x5398dc(0x15f)+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case'beachv2':_0x4e9536='https://priyanshu.apitextpro.repl.co/api/textpro?number=96&text='+_0x9cd3ca,_0x206f0e='✨Here\x27s\x20your\x20Logo\x20created\x20by\x0a\x20\x20𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡\x20𝐑𝐚𝐣𝐩𝐮𝐭\x20using\x20Textpro\x20🌷';break;case _0x5398dc(0x138):_0x4e9536=_0x5398dc(0x178)+_0x9cd3ca,_0x206f0e='✨Here\x27s\x20your\x20Logo\x20created\x20by\x0a\x20\x20𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡\x20𝐑𝐚𝐣𝐩𝐮𝐭\x20using\x20Textpro\x20🌷';break;case _0x5398dc(0x158):_0x4e9536=_0x5398dc(0x180)+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case'sketch':_0x4e9536='https://priyanshu.apitextpro.repl.co/api/textpro?number=101&text='+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case'glitch-neon':_0x4e9536=_0x5398dc(0x15c)+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x17e):_0x4e9536=_0x5398dc(0x1d0)+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x193):_0x4e9536=_0x5398dc(0x1e0)+_0x9cd3ca,_0x206f0e='✨Here\x27s\x20your\x20Logo\x20created\x20by\x0a\x20\x20𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡\x20𝐑𝐚𝐣𝐩𝐮𝐭\x20using\x20Textpro\x20🌷';break;case'candyv2':_0x4e9536=_0x5398dc(0x16e)+_0x9cd3ca,_0x206f0e='✨Here\x27s\x20your\x20Logo\x20created\x20by\x0a\x20\x20𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡\x20𝐑𝐚𝐣𝐩𝐮𝐭\x20using\x20Textpro\x20🌷';break;case _0x5398dc(0x179):_0x4e9536='https://priyanshu.apitextpro.repl.co/api/textpro?number=117&text='+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case'metalv2':_0x4e9536=_0x5398dc(0x170)+_0x9cd3ca,_0x206f0e='✨Here\x27s\x20your\x20Logo\x20created\x20by\x0a\x20\x20𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡\x20𝐑𝐚𝐣𝐩𝐮𝐭\x20using\x20Textpro\x20🌷';break;case _0x5398dc(0x1bd):_0x4e9536='https://priyanshu.apitextpro.repl.co/api/textpro?number=122&text='+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x1af):_0x4e9536=_0x5398dc(0x18a)+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case'3d':_0x4e9536=_0x5398dc(0x1c7)+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x148):_0x4e9536='https://priyanshu.apitextpro.repl.co/api/textpro?number=205&text='+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x182):_0x4e9536=_0x5398dc(0x162)+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x1c2):_0x4e9536=_0x5398dc(0x188)+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x186):_0x4e9536='https://priyanshu.apitextpro.repl.co/api/textpro?number=201&text='+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x153):_0x4e9536='https://priyanshu.apitextpro.repl.co/api/textpro?number=200&text='+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x1dd):_0x4e9536=_0x5398dc(0x19e)+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x17d):_0x4e9536=_0x5398dc(0x13d)+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x152):_0x4e9536=_0x5398dc(0x1d3)+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x191):_0x4e9536=_0x5398dc(0x1e1)+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case'skyfont':_0x4e9536=_0x5398dc(0x1c0)+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x1c6):_0x4e9536=_0x5398dc(0x15e)+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case'beachfont':_0x4e9536=_0x5398dc(0x174)+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x15d):_0x4e9536=_0x5398dc(0x1cf)+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x1b6):_0x4e9536=_0x5398dc(0x144)+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x175):_0x4e9536=_0x5398dc(0x14e)+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x1ad):_0x4e9536=_0x5398dc(0x187)+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x189):_0x4e9536=_0x5398dc(0x1d8)+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case'ring-light':_0x4e9536=_0x5398dc(0x151)+_0x9cd3ca,_0x206f0e='✨Here\x27s\x20your\x20Logo\x20created\x20by\x0a\x20\x20𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡\x20𝐑𝐚𝐣𝐩𝐮𝐭\x20using\x20Textpro\x20🌷';break;case _0x5398dc(0x1a6):_0x4e9536=_0x5398dc(0x161)+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x197):_0x4e9536=_0x5398dc(0x13f)+_0x9cd3ca,_0x206f0e='✨Here\x27s\x20your\x20Logo\x20created\x20by\x0a\x20\x20𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡\x20𝐑𝐚𝐣𝐩𝐮𝐭\x20using\x20Textpro\x20🌷';break;case'golden':_0x4e9536='https://priyanshu.apitextpro.repl.co/api/textpro?number=8&text='+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x1a5):_0x4e9536='https://priyanshu.apitextpro.repl.co/api/textpro?number=10&text='+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x1a3):_0x4e9536=_0x5398dc(0x1d2)+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x19a):_0x4e9536='https://priyanshu.apitextpro.repl.co/api/textpro?number=16&text='+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case'woodv2':_0x4e9536='https://priyanshu.apitextpro.repl.co/api/textpro?number=17&text='+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case'marble':_0x4e9536=_0x5398dc(0x168)+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x1c9):_0x4e9536=_0x5398dc(0x1ce)+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x19c):_0x4e9536=_0x5398dc(0x139)+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x172):_0x4e9536='https://priyanshu.apitextpro.repl.co/api/textpro?number=24&text='+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case'foog':_0x4e9536=_0x5398dc(0x1d7)+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x1b0):_0x4e9536=_0x5398dc(0x13a)+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case'green-leaser':_0x4e9536='https://priyanshu.apitextpro.repl.co/api/textpro?number=28&text='+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case'lightbubble':_0x4e9536=_0x5398dc(0x18f)+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x17a):_0x4e9536='https://priyanshu.apitextpro.repl.co/api/textpro?number=32&text='+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x145):_0x4e9536='https://priyanshu.apitextpro.repl.co/api/textpro?number=33&text='+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x157):_0x4e9536='https://priyanshu.apitextpro.repl.co/api/textpro?number=34&text='+_0x9cd3ca,_0x206f0e='✨Here\x27s\x20your\x20Logo\x20created\x20by\x0a\x20\x20𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡\x20𝐑𝐚𝐣𝐩𝐮𝐭\x20using\x20Textpro\x20🌷';break;case _0x5398dc(0x16c):_0x4e9536='https://priyanshu.apitextpro.repl.co/api/textpro?number=39&text='+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case'jewerly':_0x4e9536='https://priyanshu.apitextpro.repl.co/api/textpro?number=44&text='+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x1a4):_0x4e9536=_0x5398dc(0x18e)+_0x9cd3ca,_0x206f0e='✨Here\x27s\x20your\x20Logo\x20created\x20by\x0a\x20\x20𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡\x20𝐑𝐚𝐣𝐩𝐮𝐭\x20using\x20Textpro\x20🌷';break;case _0x5398dc(0x17f):_0x4e9536='https://priyanshu.apitextpro.repl.co/api/textpro?number=58&text='+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x146):_0x4e9536=_0x5398dc(0x19d)+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x149):_0x4e9536='https://priyanshu.apitextpro.repl.co/api/textpro?number=67&text='+_0x9cd3ca,_0x206f0e='✨Here\x27s\x20your\x20Logo\x20created\x20by\x0a\x20\x20𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡\x20𝐑𝐚𝐣𝐩𝐮𝐭\x20using\x20Textpro\x20🌷';break;case _0x5398dc(0x1a0):_0x4e9536=_0x5398dc(0x1a9)+_0x9cd3ca,_0x206f0e='✨Here\x27s\x20your\x20Logo\x20created\x20by\x0a\x20\x20𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡\x20𝐑𝐚𝐣𝐩𝐮𝐭\x20using\x20Textpro\x20🌷';break;case'premium':_0x4e9536='https://priyanshu.apitextpro.repl.co/api/textpro?number=70&text='+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x184):_0x4e9536=_0x5398dc(0x154)+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x167):_0x4e9536=_0x5398dc(0x15a)+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case'pink-king':_0x4e9536=_0x5398dc(0x1b9)+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x177):_0x4e9536=_0x5398dc(0x13e)+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x13c):_0x4e9536='https://priyanshu.apitextpro.repl.co/api/textpro?number=79&text='+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x16a):_0x4e9536=_0x5398dc(0x1b7)+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case'Awesome':_0x4e9536=_0x5398dc(0x1ac)+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x185):_0x4e9536=_0x5398dc(0x163)+_0x9cd3ca,_0x206f0e='✨Here\x27s\x20your\x20Logo\x20created\x20by\x0a\x20\x20𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡\x20𝐑𝐚𝐣𝐩𝐮𝐭\x20using\x20Textpro\x20🌷';break;case _0x5398dc(0x1c1):_0x4e9536='https://priyanshu.apitextpro.repl.co/api/textpro?number=98&text='+_0x9cd3ca,_0x206f0e='✨Here\x27s\x20your\x20Logo\x20created\x20by\x0a\x20\x20𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡\x20𝐑𝐚𝐣𝐩𝐮𝐭\x20using\x20Textpro\x20🌷';break;case _0x5398dc(0x1b5):_0x4e9536=_0x5398dc(0x192)+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x164):_0x4e9536='https://priyanshu.apitextpro.repl.co/api/textpro?number=106&text='+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x1ae):_0x4e9536=_0x5398dc(0x181)+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x13b):_0x4e9536='https://priyanshu.apitextpro.repl.co/api/textpro?number=109&text='+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x1a1):_0x4e9536=_0x5398dc(0x18d)+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x165):_0x4e9536='https://priyanshu.apitextpro.repl.co/api/textpro?number=177&text='+_0x9cd3ca,_0x206f0e='✨Here\x27s\x20your\x20Logo\x20created\x20by\x0a\x20\x20𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡\x20𝐑𝐚𝐣𝐩𝐮𝐭\x20using\x20Textpro\x20🌷';break;case _0x5398dc(0x18b):_0x4e9536='https://priyanshu.apitextpro.repl.co/api/textpro?number=2&text='+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x1b1):_0x4e9536=_0x5398dc(0x147)+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x14f):_0x4e9536=_0x5398dc(0x19b)+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x1da):_0x4e9536=_0x5398dc(0x1de)+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x1b3):_0x4e9536='https://priyanshu.apitextpro.repl.co/api/textpro?number=40&text='+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x1a2):_0x4e9536=_0x5398dc(0x195)+_0x9cd3ca,_0x206f0e='✨Here\x27s\x20your\x20Logo\x20created\x20by\x0a\x20\x20𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡\x20𝐑𝐚𝐣𝐩𝐮𝐭\x20using\x20Textpro\x20🌷';break;case'rainbow-box':_0x4e9536='https://priyanshu.apitextpro.repl.co/api/textpro?number=47&text='+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x16f):_0x4e9536=_0x5398dc(0x1d9)+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x1cd):_0x4e9536=_0x5398dc(0x1c8)+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x1db):_0x4e9536='https://priyanshu.apitextpro.repl.co/api/textpro?number=56&text='+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x183):_0x4e9536=_0x5398dc(0x156)+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x14c):_0x4e9536='https://priyanshu.apitextpro.repl.co/api/textpro?number=60&text='+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x1ca):_0x4e9536=_0x5398dc(0x196)+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x160):_0x4e9536=_0x5398dc(0x1ba)+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x155):_0x4e9536=_0x5398dc(0x1aa)+_0x9cd3ca,_0x206f0e=_0x5398dc(0x190);break;case _0x5398dc(0x140):_0x4e9536=_0x5398dc(0x14b)+_0x9cd3ca,_0x206f0e='✨Here\x27s\x20your\x20Logo\x20created\x20by\x0a\x20\x20𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡\x20𝐑𝐚𝐣𝐩𝐮𝐭\x20using\x20Textpro\x20🌷';break;default:return _0x41d78e[_0x5398dc(0x1a7)]('Invalid\x20logo\x20type!\x20Use\x20.textpro\x20list\x201\x20to\x20see\x20the\x20list\x20of\x20textpro\x20logos.',_0x33a851,_0x40d86d);}_0x41d78e['sendMessage'](_0x5398dc(0x1b8),_0x33a851,_0x40d86d);let _0x59fc13=await axios[_0x5398dc(0x1bf)](_0x4e9536,{'responseType':_0x5398dc(0x16b)}),_0x5cf566=_0x59fc13[_0x5398dc(0x1dc)];return fs[_0x5398dc(0x150)](_0x30c2ee,Buffer[_0x5398dc(0x1c4)](_0x5cf566,_0x5398dc(0x1bb))),_0x41d78e[_0x5398dc(0x1a7)]({'body':_0x206f0e,'attachment':fs[_0x5398dc(0x14d)](_0x30c2ee)},_0x33a851,()=>fs[_0x5398dc(0x1d5)](_0x30c2ee),_0x40d86d);};
+const axios = require("axios");
+const request = require("request");
+const fs = require("fs-extra");
+
+module.exports.config = {
+  name: "textpro",
+  version: "11.0.0",
+  hasPermssion: 0,
+  credits: `THE_FAHEEM`,
+  usePrefix: true,
+  description: "Make your own logo using textpro",
+  commandCategory: "logo",
+  usages: "textpro list or textpro list (page number) or textpro (logo) (text)",
+  cooldowns: 2,
+};
+
+module.exports.run = async function ({ api, event, args, Users }) {
+  let { messageID, senderID, threadID } = event;
+
+  if (args.length >= 2 && args[0].toLowerCase() === "list") {
+    let page = parseInt(args[1]);
+    switch (page) {
+      case 1:
+        return api.sendMessage(
+          `here's the logo list - Page 1:\n1. glowing\n2. giraffe\n3. glass\n4. business\n5. orange\n6. comic\n7. slime\n8. holloween2\n9. frozen\n10. thunder\n11. neonlight2\n12. neon3\n13. neon4\n14. heartneon\n15. transformer\n16. goldentext\n17. whitegold\n18. luxury\n19. glossy\n20. sky\n21. brokenglass\n22. wetglass\n23. luxurygold\n24. horrorgift\n25. wood2\n26. blood\n27. jokerlogo\n28. glue\n29. toxic\n30. dropwater\n\nPAGE 1 - 3`,
+          threadID,
+          messageID
+        );
+      case 2:
+        return api.sendMessage(
+          `Logo list - Page 2:\n31. 3dstone\n32. rock\n33. glossycarbon\n34. decorate\n35. skeleton\n36. metaldark\n37. dulexsilver\n38. biscuit\n39. icecold\n40. wintercold\n41. snow\n42. snow2\n43. wicker\n44. decorativeglass\n45. febric\n46. blueglass\n47. ballon\n48. double\n50. beach\n51. artpaper\n52. captain\n53. captain2\n54. demin\n55. leaves\n56. fluidpaint\n57. demin\n58. steel\n59. 3dmetal\n60. 3dmetal2\n61. metalpurple\n\nPAGE 2 - 3`,
+          threadID,
+          messageID
+        );
+      case 3:
+        return api.sendMessage(
+          `Logo list - Page 3:\n62. goldglitter\n63. thor\n64. metalic\n65. hotmetal\n66. glossymetal\n67. metalgold\n68. metalpaint\n69. hologram\n70. 3dcrystal\n71. grung\n72. multicolor\n73. pinksoft\n74. 3dliquid\n75. burger\n76. cage\n77. knitted\n78. 3dmetal2\n79. party\n80. 3dchristmas\n81. newyear\n82. purpleglass\n83. ballon2\n84. ballon3\n85. cobble\n86. greenhorror\n87. holloweenfire\n88. batman\n89. skeleton2\n90. 1917\n91. lion\n92. purple2\n93. videogame\n94. embossed\n95. spooky\n96. lava\n97. water\n98. artistic\n99. party2\n100. newyear2\n101. newyear3\n102. newyear4\n103. lightglow\n104. grafity2`,
+          threadID,
+          messageID
+        );
+      default:
+        return api.sendMessage(
+          `Invalid page number! Please use "list 1" or "list 2" or "list 3 in the total of list there are 100 textpro logo for now.".`,
+          threadID,
+          messageID
+        );
+    }
+  }
+
+  if (args.length < 2) {
+    return api.sendMessage(
+      `Invalid command format! Use: textpro list or textpro list (page number) or textpro (logo) (text)`,
+      threadID,
+      messageID
+    );
+  }
+
+  let type = args[0].toLowerCase();
+  let name = args.slice(1).join(" ");
+  let pathImg = __dirname + `/cache/${type}_${name}.png`;
+  let apiUrl, message;
+
+  switch (type) {
+    case "glowing":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=2&text=${name}`;
+      message = "here's the [GLOWING] Logo created:";
+      break;
+    case "giraffe":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=3&text=${name}`;
+      message = "here's the [ GIRAFFE ] Logo created:";
+      break;
+    case "glass":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=4&text=${name}`;
+      message = "here's the [ GLASS ] Logo created:";
+      break;
+    case "business":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=5&text=${name}`;
+      message = "here's the [BUSINESS] Logo Created:";
+      break;
+    case "orange":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=6&text=${name}`;
+      message = "here's the [ ORANGE ] - Logo Created:";
+      break;
+    case "comic":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=7&text=${name}`;
+      message = "here's the [ COMIC ] Logo Created:";
+      break;
+    case "slime":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=8&text=${name}`;
+      message = "here's the [ SLIME ] Logo created:";
+      break;
+    case "halloween2":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=9&text=${name}`;
+      message = "here's the [ HALLOWEEN ] Logo created:";
+      break;
+    case "frozen":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=10&text=${name}`;
+      message = "here's the [ FROZEN ] Logo created:";
+      break;
+    case "thunder":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=11&text=${name}`;
+      message = "here's the [ THUNDER ] Logo created:";
+      break;
+    case "neonlight2":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=12&text=${name}`;
+      message = "here's the [ NEONLIGHT 2 ] Logo created:";
+      break;
+    case "neon3":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=13&text=${name}`;
+      message = "here's the [ NEON3 ] Logo created:";
+      break;
+    case "neon4":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=14&text=${name}`;
+      message = "here's the [ NEON4 ] Logo created:";
+      break;
+    case "heartneon":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=15&text=${name}`;
+      message = "here's the [ HEARTNEON ] Logo created:";
+      break;
+    case "transformer":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=16&text=${name}`;
+      message = "here's the [ TRANSFORMER ] Logo created:";
+      break;
+    case "goldentext":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=17&text=${name}`;
+      message = "here's the [ GOLDEN TEXT ] Logo created:";
+      break;
+    case "whitegold":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=18&text=${name}`;
+      message = "here's the [ WHITE GOLD ] Logo created:";
+      break;
+    case "luxury":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=19&text=${name}`;
+      message = "here's the [ LUXURY ] Logo created:";
+      break;
+    case "glossy":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=20&text=${name}`;
+      message = "here's the [ GLOSSY ] Logo created:";
+      break;
+    case "sky":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=21&text=${name}`;
+      message = "here's the [ SKY ] Logo created:";
+      break;
+    case "brokenglass":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=22&text=${name}`;
+      message = "here's the [ BROKENGLASS ] Logo created:";
+      break;
+    case "luxurygold":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=24&text=${name}`;
+      message = "here's the [ LUXURY GOLD ] Logo created:";
+      break;
+    case "horrorgift":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=25&text=${name}`;
+      message = "here's the [ HORROR GIFT ] Logo created:";
+      break;
+    case "wood":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=26&text=${name}`;
+      message = "here's the [ WOOD ] Logo created:";
+      break;
+    case "blood":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=27&text=${name}`;
+      message = "here's the [ BLOOD ] Logo created:";
+      break;
+    case "jokerlogo":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=29&text=${name}`;
+      message = "here's the [ JOKERLOGO ] Logo created:";
+      break;
+    case "glue":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=30&text=${name}`;
+      message = "here's the [ GLUE ] Logo created:";
+      break;
+    case "toxic":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=31&text=${name}`;
+      message = "here's the [ TOXIC ] Logo created:";
+      break;
+    case "dropwater":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=32&text=${name}`;
+      message = "here's the [ DROPWATER ] Logo created:";
+      break;
+    case "stone":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=33&text=${name}`;
+      message = "here's the [ STONE ] Logo created:";
+      break;
+    case "rock":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=34&text=${name}`;
+      message = "here's the [ ROCK ] Logo created:";
+      break;
+    case "glossycarbon":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=35&text=${name}`;
+      message = "here's the [ GLOSSY CARBON ] Logo created:";
+      break;
+    case "decorate":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=36&text=${name}`;
+      message = "here's the [ DECORATE ] Logo created:";
+      break;
+    case "skeleton":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=38&text=${name}`;
+      message = "here's the [ SKELETON ] Logo created:";
+      break;
+    case "metaldark":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=40&text=${name}`;
+      message = "here's the [ METALDARK ] Logo created:";
+      break;
+    case "dulexsilver":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=39&text=${name}`;
+      message = "here's the [ BLOOD ] Logo created:";
+      break;
+    case "biscuit":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=41&text=${name}`;
+      message = "here's the [ BISCUIT ] Logo created:";
+      break;
+    case "icecold":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=44&text=${name}`;
+      message = "here's the [ ICECOLD ] Logo created:";
+      break;
+    case "wintercold":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=45&text=${name}`;
+      message = "here's the [ WINTER COLD ] Logo created:";
+      break;
+    case "snow":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=46&text=${name}`;
+      message = "here's the [ SNOW ] Logo created:";
+      break;
+    case "snow2":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=48&text=${name}`;
+      message = "here's the [ SNOW2 ] Logo created:";
+      break;
+    case "wicker":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=49&text=${name}`;
+      message = "here's the [ WICKER ] Logo created:";
+      break;
+    case "decorativeglass":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=50&text=${name}`;
+      message = "here's the [ DECORATIVE GLASS ] Logo created:";
+      break;
+    case "febric":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=51&text=${name}`;
+      message = "here's the [ FEBRIC ] Logo created:";
+      break;
+    case "blueglass":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=52&text=${name}`;
+      message = "here's the [ BLUEGLASS ] Logo created:";
+      break;
+    case "ballon":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=53&text=${name}`;
+      message = "here's the [ BALLON ] Logo created:";
+      break;
+    case "double":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=54&text=${name}`;
+      message = "here's the [ DOUBLE ] Logo created:";
+      break;
+    case "beach":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=55&text=${name}`;
+      message = "here's the [ BEACH ] Logo created:";
+      break;
+    case "artpaper":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=56&text=${name}`;
+      message = "here's the [ ARTPAPER ] Logo created:";
+      break;
+    case "captain":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=57&text=${name}`;
+      message = "here's the [ CAPTAIN ] Logo created:";
+      break;
+    case "captain2":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=58&text=${name}`;
+      message = "here's the [ CAPTAIN 2 ] Logo created:";
+      break;
+    case "demin":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=59&text=${name}`;
+      message = "here's the [ DEMIN ] Logo created:";
+      break;
+    case "leaves":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=60&text=${name}`;
+      message = "here's the [ LEAVES ] Logo created:";
+      break;
+    case "fluidpaint":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=61&text=${name}`;
+      message = "here's the [ FLUIDPAINT ] Logo created:";
+      break;
+    case "steel":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=62&text=${name}`;
+      message = "here's the [ STEEL ] Logo created:";
+      break;
+    case "3dmetal":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=63&text=${name}`;
+      message = "here's the [ 3DMETAL ] Logo created:";
+      break;
+    case "metalpurple":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=64&text=${name}`;
+      message = "here's the [ METALPURPLE ] Logo created:";
+      break;
+    case "goldglitter":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=65&text=${name}`;
+      message = "here's the [ GOLDGLITTER ] Logo created:";
+      break;
+    case "thor":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=66&text=${name}`;
+      message = "here's the [ THOR ] Logo created:";
+      break;
+    case "metalic":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=67&text=${name}`;
+      message = "here's the [ METALIC ] Logo created:";
+      break;
+    case "hotmetal":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=68&text=${name}`;
+      message = "here's the [ HOT METAL ] Logo created:";
+      break;
+    case "glossymetal":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=69&text=${name}`;
+      message = "here's the [ GLOSSY METAL ] Logo created:";
+      break;
+    case "metalgold":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=70&text=${name}`;
+      message = "here's the [ METALGOLD ] Logo created:";
+      break;
+    case "metalpaint":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=71&text=${name}`;
+      message = "here's the [ METALPAINT ] Logo created:";
+      break;
+    case "hologram":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=72&text=${name}`;
+      message = "here's the [ HOLOGRAM ] Logo created:";
+      break;
+    case "3dcrystal":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=73&text=${name}`;
+      message = "here's the [ 3D CRYSTAL ] Logo created:";
+      break;
+    case "grung":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=74&text=${name}`;
+      message = "here's the [ GRUNG ] Logo created:";
+      break;
+    case "multicolor":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=75&text=${name}`;
+      message = "here's the [ MULTICOLOR ] Logo created:";
+      break;
+    case "pinksoft":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=76&text=${name}`;
+      message = "here's the [ PINKSOFT ] Logo created:";
+      break;
+    case "3dliquid":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=77&text=${name}`;
+      message = "here's the [ 3DLIQUID ] Logo created:";
+      break;
+    case "burger":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=78&text=${name}`;
+      message = "here's the [ BURGER ] Logo created:";
+      break;
+    case "cage":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=79&text=${name}`;
+      message = "here's the [ CAGE ] Logo created:";
+      break;
+    case "knitted":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=80&text=${name}`;
+      message = "here's the [ KNITTED ] Logo created:";
+      break;
+    case "3dmetal2":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=81&text=${name}`;
+      message = "here's the [ METAL 2 ] Logo created:";
+      break;
+    case "party":
+      apiUrl = `hhttps://5xp7m4-8080.csb.app/api/textpro?number=82&text=${name}`;
+      message = "here's the [ PARTY ] Logo created:";
+      break;
+    case "3dchristmas":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=83&text=${name}`;
+      message = "here's the [ 3DCRISTMAS ] Logo created:";
+      break;
+    case "newyear":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=84&text=${name}`;
+      message = "here's the [ NEWYEAR ] Logo created:";
+      break;
+    case "purpleglass":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=85&text=${name}`;
+      message = "here's the [ PURPLE GLASS ] Logo created:";
+      break;
+    case "ballon2":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=86&text=${name}`;
+      message = "here's the [ BALLON2 ] Logo created:";
+      break;
+    case "ballon3":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=87&text=${name}`;
+      message = "here's the [ BALLON ] Logo created:";
+      break;
+    case "cobble":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=88&text=${name}`;
+      message = "here's the [ COBBLE ] Logo created:";
+      break;
+    case "greenhorror":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=89&text=${name}`;
+      message = "here's the [ GREEN HORROR ] Logo created:";
+      break;
+    case "holloweenfire":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=90&text=${name}`;
+      message = "here's the [ HOLLOWEEN FIRE ] Logo created:";
+      break;
+    case "batman":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=91&text=${name}`;
+      message = "here's the [ BATMAN ] Logo created:";
+      break;
+    case "skeleton2":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=92&text=${name}`;
+      message = "here's the [ SKELETON 2 ] Logo created:";
+      break;
+    case "1917":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=93&text=${name}`;
+      message = "here's the [ 1917 ] Logo created:";
+      break;
+    case "lion":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=94&text=${name}`;
+      message = "here's the [ LION ] Logo created:";
+      break;
+    case "purple2":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=95&text=${name}`;
+      message = "here's the [ PURPLE2  ] Logo created:";
+      break;
+    case "videogame":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=96&text=${name}`;
+      message = "here's the [ VIDEO GAME ] Logo created:";
+      break;
+    case "embossed":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=97&text=${name}`;
+      message = "here's the [ EMBOSSED ] Logo created:";
+      break;
+    case "spooky":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=98&text=${name}`;
+      message = "here's the [ SPOOKY ] Logo created:";
+      break;
+    case "lava":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=99&text=${name}`;
+      message = "here's the [ LAVA ] Logo created:";
+      break;
+    case "water":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=100&text=${name}`;
+      message = "here's the [ WATER ] Logo created:";
+      break;
+    case "artistic":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=101&text=${name}`;
+      message = "here's the [ ARTISTIC ] Logo created:";
+      break;
+    case "party2":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=102&text=${name}`;
+      message = "here's the [ PARTY 2 ] Logo created:";
+      break;
+    case "newyear2":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=103&text=${name}`;
+      message = "here's the [ NEWYEAR2 ] Logo created:";
+      break;
+    case "newyear3":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=104&text=${name}`;
+      message = "here's the [ NEWYEAR3 ] Logo created:";
+      break;
+    case "newyear4":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=105&text=${name}`;
+      message = "here's the [ NEWYEAR4 ] Logo created:";
+      break;
+    case "lightglow":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=106&text=${name}`;
+      message = "here's the [ LIGHT GLOW ] Logo created:";
+      break;
+    case "grafity2":
+      apiUrl = `https://5xp7m4-8080.csb.app/api/textpro?number=107&text=${name}`;
+      message = "here's the [ GRAFITY 2 ] Logo created:";
+      break;
+    default:
+      return api.sendMessage(
+        `Invalid logo type! Use .textpro list 1 to see the list of textpro logos.`,
+        threadID,
+        messageID
+      );
+  }
+
+  api.sendMessage("please wait...", threadID, messageID);
+  let response = await axios.get(apiUrl, { responseType: "arraybuffer" });
+  let logo = response.data;
+  fs.writeFileSync(pathImg, Buffer.from(logo, "utf-8"));
+  return api.sendMessage(
+    {
+      body: message,
+      attachment: fs.createReadStream(pathImg),
+    },
+    threadID,
+    () => fs.unlinkSync(pathImg),
+    messageID
+  );
+};
