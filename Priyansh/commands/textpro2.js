@@ -3,7 +3,7 @@ const request = require("request");
 const fs = require("fs-extra");
 
 module.exports.config = {
-  name: "textpro",
+  name: "textpro2",
   version: "11.0.0",
   hasPermssion: 0,
   credits: `THE_FAHEEM`,
