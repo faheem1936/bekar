@@ -7,7 +7,7 @@ module.exports.config = {
   name: "removebg",
   version: "1.0.0",
   hasPermission: 0,
-  credits: "Faheem + GPT",
+  credits: "Faheem",
   description: "Remove image background using rembg",
   commandCategory: "tools",
   usages: "reply to image",
