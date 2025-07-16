@@ -2,11 +2,11 @@ module.exports.config = {
   name: "pair",
   version: "1.0.0",
   hasPermssion: 0,
-  credits: "Faheem Akhtar",
-  description: "pairing",
+  credits: "D-Jukie (Xuyên get)",
+  description: "Pairing",
   commandCategory: "Love",
   usages: "pair",
-  cooldowns: 10,
+  cooldowns: 15,
 };
 module.exports.run = async function ({ api, event, Threads, Users }) {
   const axios = global.nodemodule["axios"];
@@ -22,14 +22,6 @@ module.exports.run = async function ({ api, event, Threads, Users }) {
   var id = listUserID[Math.floor(Math.random() * listUserID.length)];
   var name = (await Users.getData(id)).name;
   var arraytag = [];
-  const gifCute = [
-    "https://i.pinimg.com/originals/42/9a/89/429a890a39e70d522d52c7e52bce8535.gif",
-    "https://i.imgur.com/HvPID5q.gif",
-    "https://i.pinimg.com/originals/9c/94/78/9c9478bb26b2160733ce0c10a0e10d10.gif",
-    "https://i.pinimg.com/originals/9d/0d/38/9d0d38c79b9fcf05f3ed71697039d27a.gif",
-    "https://i.imgur.com/BWji8Em.gif",
-    "https://i.imgur.com/ubJ31Mz.gif",
-  ];
   arraytag.push({ id: event.senderID, tag: namee });
   arraytag.push({ id: id, tag: name });
 
@@ -42,7 +34,7 @@ module.exports.run = async function ({ api, event, Threads, Users }) {
   fs.writeFileSync(__dirname + "/cache/avt.png", Buffer.from(Avatar, "utf-8"));
 
   let gifLove = (
-    await axios.get(gifCute[Math.floor(Math.random() * gifCute.length)], {
+    await axios.get(`https://i.ibb.co/wC2JJBb/trai-tim-lap-lanh.gif`, {
       responseType: "arraybuffer",
     })
   ).data;
@@ -69,8 +61,13 @@ module.exports.run = async function ({ api, event, Threads, Users }) {
   imglove.push(fs.createReadStream(__dirname + "/cache/avt2.png"));
 
   var msg = {
-    body: `🅢𝐔𝐂𝐂𝐄𝐒𝐒𝐅𝐔𝐋 🅟𝐀𝐈𝐑𝐈𝐍𝐆
-𝐇𝐎𝐏𝐄 𝐘𝐎𝐔 𝐁𝐎𝐓𝐇 𝐖𝐈𝐋𝐋 𝐒𝐓𝐎𝐏 𝐅𝐋𝐈𝐑𝐓𝐈𝐍𝐆 ⊂◉‿◉\n━━━━━━━━━━━━━━━━━━ ${namee} 💓 ${name}\n━━━━━━━━━━━━━━━━━━\n➥ 𝐃𝐎𝐔𝐁𝐋𝐄 𝐑𝐀𝐓𝐈𝐎: ${tle}%\n━━━━━━━━━━━━━━━━━━\n𝙊𝙬𝙣𝙚𝙧 Faheem Akhtar`,
+    body:
+      `🥰Successful pairing!\n💌Wish you two hundred years of happiness\n💕Double ratio: ${tle}%\n` +
+      namee +
+      " " +
+      "💓" +
+      " " +
+      name,
     mentions: arraytag,
     attachment: imglove,
   };
