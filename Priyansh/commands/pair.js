@@ -22,7 +22,7 @@ async function makeImage({ one, two }) {
 
   if (!fs.existsSync(__root)) fs.mkdirSync(__root, { recursive: true });
 
-  const pairingImgUrl = "https://i.ibb.co/fYfJCWbG/asad-1.png";
+  const pairingImgUrl = "https://i.ibb.co/fYfJCWbG/asad-1.jpg";
   const baseImagePath = path.join(__root, "pairing_temp.png");
 
   try {
