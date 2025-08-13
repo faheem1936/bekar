@@ -2,7 +2,7 @@ module.exports.config = {
   name: "pair",
   version: "1.0.1",
   hasPermssion: 0,
-  credits: "Faheem”,
+  credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
   description: "Pair with people of the opposite gender in the group",
   commandCategory: "For users",
   cooldowns: 5,
@@ -12,6 +12,7 @@ module.exports.config = {
     "jimp": ""
   }
 };
+
 
 async function makeImage({ one, two }) {
   const fs = global.nodemodule["fs-extra"];
