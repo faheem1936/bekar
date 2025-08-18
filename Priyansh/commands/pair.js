@@ -13,7 +13,6 @@ module.exports.config = {
   }
 };
 
-
 async function makeImage({ one, two }) {
   const fs = global.nodemodule["fs-extra"];
   const path = global.nodemodule["path"];
@@ -149,12 +148,12 @@ module.exports.run = async function ({ api, event }) {
 💞 𝑳𝒐𝒗𝒆 𝑪𝒐𝒏𝒏𝒆𝒄𝒕𝒊𝒐𝒏 ➤ ${tle}
 
 ╭───────────────────────╮
- Mubarak ho jeew
+  𝑻𝒖 𝒎𝒊𝒍𝒆 𝒕𝒐 𝒅𝒖𝒂𝒆𝒊𝒏 𝒎𝒒𝒃𝒐𝒍 𝒉𝒐 𝒈𝒂𝒊𝒏..
 ╰───────────────────────╯
 
-🔒 𝗟𝗼𝘃𝗲 𝗟𝗼𝗰𝗸𝗲𝗱 𝗯𝘆: Faheem Akhtar🖤🪽
-👑 𝗙𝗮𝘁𝗲 𝗣𝗿𝗼𝗴𝗿𝗮𝗺𝗺𝗲𝗿: Chuza Bot💘
-🖤 𝐎𝐰𝐧𝐞𝐫 :The Faheem 🖤💫`,
+🔒 𝗟𝗼𝘃𝗲 𝗟𝗼𝗰𝗸𝗲𝗱 𝗯𝘆: Faheem Akhtar 🖤🪽
+👑 𝗙𝗮𝘁𝗲 𝗣𝗿𝗼𝗴𝗿𝗮𝗺𝗺𝗲𝗿: Faheem 𝐛𝐎𝐭 💘
+🖤 𝐎𝐰𝐧𝐞𝐫 : Faheem 🖤💫`,
         mentions: arraytag,
         attachment: fs.createReadStream(path)
       }, threadID, () => fs.unlinkSync(path), messageID)
