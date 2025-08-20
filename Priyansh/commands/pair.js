@@ -2,8 +2,8 @@ module.exports.config = {
   name: "pair",
   version: "1.0.1",
   hasPermssion: 0,
-  credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
-  description: "Pair with people of the opposite gender in the group",
+  credits: "Talha Pathan",
+  description: "Pair love 💘",
   commandCategory: "For users",
   cooldowns: 5,
   dependencies: {
@@ -22,7 +22,8 @@ async function makeImage({ one, two }) {
 
   if (!fs.existsSync(__root)) fs.mkdirSync(__root, { recursive: true });
 
-  const pairingImgUrl = "https://i.ibb.co/fYfJCWbG/asad-1.jpg";
+  // 👉 Yaha apna template link lagao (1365x768 wali image)
+  const pairingImgUrl = "https://i.ibb.co/My5XyNHL/00e1483c731c917de50536f605c15264.jpg"; 
   const baseImagePath = path.join(__root, "pairing_temp.png");
 
   try {
@@ -30,7 +31,7 @@ async function makeImage({ one, two }) {
     fs.writeFileSync(baseImagePath, Buffer.from(baseImageBuffer, 'binary'));
   } catch (error) {
     console.error("Error downloading base image:", error.message);
-    throw new Error("Failed to download base image.");
+    throw new Error("Base image download nahi ho payi ❌");
   }
 
   let pairing_img = await jimp.read(baseImagePath);
@@ -38,34 +39,30 @@ async function makeImage({ one, two }) {
   let avatarOne = path.join(__root, ⁠ avt${one}.png ⁠);
   let avatarTwo = path.join(__root, ⁠ avt${two}.png ⁠);
 
-  try {
-    let getAvatarOne = (await axios.get(
-      ⁠ https://graph.facebook.com/${one}/picture?width=512&height=512&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662 ⁠,
-      { responseType: 'arraybuffer' }
-    )).data;
-    fs.writeFileSync(avatarOne, Buffer.from(getAvatarOne, 'binary'));
-  } catch (error) {
-    console.error(⁠ Error downloading avatar for user ${one}: ⁠, error.message);
-    throw new Error(⁠ Failed to download avatar for user ${one}. ⁠);
-  }
+  // 👉 Avatar download karna
+  const downloadAvatar = async (id, filePath) => {
+    try {
+      let buffer = (await axios.get(
+        ⁠ https://graph.facebook.com/${id}/picture?width=512&height=512&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662 ⁠,
+        { responseType: 'arraybuffer' }
+      )).data;
+      fs.writeFileSync(filePath, Buffer.from(buffer, 'binary'));
+    } catch (error) {
+      console.error(⁠ Avatar download error (user ${id}): ⁠, error.message);
+      throw new Error(⁠ Avatar ${id} ka download fail ❌ ⁠);
+    }
+  };
 
-  try {
-    let getAvatarTwo = (await axios.get(
-      ⁠ https://graph.facebook.com/${two}/picture?width=512&height=512&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662 ⁠,
-      { responseType: 'arraybuffer' }
-    )).data;
-    fs.writeFileSync(avatarTwo, Buffer.from(getAvatarTwo, 'binary'));
-  } catch (error) {
-    console.error(⁠ Error downloading avatar for user ${two}: ⁠, error.message);
-    throw new Error(⁠ Failed to download avatar for user ${two}. ⁠);
-  }
+  await downloadAvatar(one, avatarOne);
+  await downloadAvatar(two, avatarTwo);
 
   let circleOne = await jimp.read(await circle(avatarOne));
   let circleTwo = await jimp.read(await circle(avatarTwo));
 
+  // 🔥 FIXED size & position - dono DPs circle ke andar fit ho jayengi
   pairing_img
-    .composite(circleOne.resize(410, 410), 785, 184)
-    .composite(circleTwo.resize(410, 410), 94, 181);
+    .composite(circleOne.resize(175, 175), 43, 98)  // Left side circle
+    .composite(circleTwo.resize(175, 175), 419, 92); // Right side circle
 
   let raw = await pairing_img.getBufferAsync("image/png");
   fs.writeFileSync(pathImg, raw);
@@ -100,17 +97,12 @@ module.exports.run = async function ({ api, event }) {
     let participantIDs = threadInfo.participantIDs.filter(id => id !== senderID);
 
     if (participantIDs.length === 0) {
-      return api.sendMessage(
-        "No other participants found in the group to pair with.",
-        threadID,
-        messageID
-      );
+      return api.sendMessage("Group me aur koi member hi nahi mila pairing ke liye 🤷‍♂️", threadID, messageID);
     }
 
     const participantsInfo = await api.getUserInfo(participantIDs);
 
     let oppositeGenderIDs = [];
-
     if (senderGender === 2) {
       oppositeGenderIDs = participantIDs.filter(id => participantsInfo[id]?.gender === 1);
     } else if (senderGender === 1) {
@@ -138,33 +130,27 @@ module.exports.run = async function ({ api, event }) {
 
     return makeImage({ one, two }).then(path =>
       api.sendMessage({
-        body: `
-╔═════🌹༺💘༻🌹═════╗
-   💖 𝗟𝗼𝘃𝗲𝗯𝗶𝗿𝗱𝘀 𝗙𝗼𝘂𝗻𝗱𝗲𝗱 💖
-╚═════🌹༺💘༻🌹═════╝
+        body: `‎𝐎𝐰𝐧𝐞𝐫 ➻ 🌹 Faheem Akhtar 🌹
 
-💌 𝑯𝒆𝒂𝒓𝒕𝒃𝒆𝒂𝒕 ➤ ${namee}
-💘 𝑺𝒐𝒖𝒍𝒎𝒂𝒕𝒆 ➤ ${name}
-💞 𝑳𝒐𝒗𝒆 𝑪𝒐𝒏𝒏𝒆𝒄𝒕𝒊𝒐𝒏 ➤ ${tle}
+⎯ⷨ͢⟵͇̽💗⃪꯭ⷯ༆⁂𝄄❘⍣ . . 𝐀𝐧𝐤𝐡𝐨 𝐦𝐞 𝐛𝐚𝐬𝐚𝐥𝐮 𝐭𝐮𝐣𝐡𝐤𝐨 ..
+𝐒𝐡𝐞𝐞𝐬𝐡𝐞 𝐦𝐞 𝐭𝐞𝐫𝐚𝐝𝐞𝐞𝐝𝐚𝐫 𝐡𝐨 ..
+𝐀𝐤 𝐰𝐚𝐪𝐭 𝐞𝐬𝐚 𝐚𝐲𝐞 𝐣𝐢𝐧𝐝𝐠𝐢 𝐦𝐞 ..
+𝐭𝐮𝐣𝐡𝐤𝐨 𝐯 𝐡𝐮𝐦𝐬𝐞 𝐩𝐲𝐚𝐫 𝐡𝐨 ..
 
-╭───────────────────────╮
-  𝑻𝒖 𝒎𝒊𝒍𝒆 𝒕𝒐 𝒅𝒖𝒂𝒆𝒊𝒏 𝒎𝒒𝒃𝒐𝒍 𝒉𝒐 𝒈𝒂𝒊𝒏..
-╰───────────────────────╯
+⎯᪵⎯꯭̽𝆺꯭𝅥
 
-🔒 𝗟𝗼𝘃𝗲 𝗟𝗼𝗰𝗸𝗲𝗱 𝗯𝘆: Faheem Akhtar 🖤🪽
-👑 𝗙𝗮𝘁𝗲 𝗣𝗿𝗼𝗴𝗿𝗮𝗺𝗺𝗲𝗿: Faheem 𝐛𝐎𝐭 💘
-🖤 𝐎𝐰𝐧𝐞𝐫 : Faheem 🖤💫`,
+➻ 𝐍𝗔ɱɘ ✦ ${namee}
+
+➻ 𝐍𝗔ɱɘ ✦ ${name}
+
+🌸🍁The odds are: 〘${tle}%`,
         mentions: arraytag,
         attachment: fs.createReadStream(path)
       }, threadID, () => fs.unlinkSync(path), messageID)
     );
 
   } catch (error) {
-    console.error("Error in pair command:", error.message);
-    return api.sendMessage(
-      "An error occurred while pairing. Please try again later or contact the bot admin.",
-      threadID,
-      messageID
-    );
+    console.error("Pair command error:", error.message);
+    return api.sendMessage("Error aaya pairing me ❌ Baad me try karo!", threadID, messageID);
   }
 };
