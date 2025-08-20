@@ -130,7 +130,7 @@ module.exports.run = async function ({ api, event }) {
 
     return makeImage({ one, two }).then(path =>
       api.sendMessage({
-        body: `‎𝐎𝐰𝐧𝐞𝐫 ➻ 🌹 Faheem Akhtar 🌹
+        body: `‎𝐎𝐰𝐧𝐞𝐫 ➻  ❤𝐅𝐚𝐡𝐞𝐞𝐦 𝐀𝐤𝐡𝐭𝐚𝐫❤
 
 ⎯ⷨ͢⟵͇̽💗⃪꯭ⷯ༆⁂𝄄❘⍣ . . 𝐀𝐧𝐤𝐡𝐨 𝐦𝐞 𝐛𝐚𝐬𝐚𝐥𝐮 𝐭𝐮𝐣𝐡𝐤𝐨 ..
 𝐒𝐡𝐞𝐞𝐬𝐡𝐞 𝐦𝐞 𝐭𝐞𝐫𝐚𝐝𝐞𝐞𝐝𝐚𝐫 𝐡𝐨 ..
