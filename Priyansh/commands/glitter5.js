@@ -1,4 +1,4 @@
-const API = "https://cjhvv2-3000.csb.app/api/ephoto/glitter?text2=Artist&text=";
+const API = "https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/glitter?text2=Artist&text=";
 module.exports.config = {
   name: "glitter5",
   version: "1.0.0",
