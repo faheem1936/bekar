@@ -1,4 +1,4 @@
-const API = "https://cjhvv2-3000.csb.app/api/ephoto/wood?text=Pro&text2=";
+const API = "https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/wood?text=Pro&text2=";
 module.exports.config = {
   name: "wood",
   version: "1.0.0",
