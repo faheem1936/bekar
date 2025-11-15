@@ -6,7 +6,7 @@ module.exports.config = {
   name: "ephoto",
   version: "11.0.0",
   hasPermssion: 0,
-  credits: "THE_FAHEEM",
+  credits: "THE__FAHEEM",
   usePrefix: true,
   description: "Make your own logo using ephoto",
   commandCategory: "logo",
