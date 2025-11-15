@@ -6,7 +6,7 @@ const path = require("path");
 module.exports = {
   config: {
     name: "song",
-    version: "1.0.3", // Updated version to reflect changes
+    version: "1.0.4", // Updated version
     hasPermssion: 0,
     credits: "Mian Amir",
     description: "Download and play YouTube song or video from keyword search",
@@ -24,7 +24,7 @@ module.exports = {
   run: async function ({ api, event, args }) {
     let songName, type;
 
-    // Parse command: .play <song> or .play video <song>
+    // Parse command: .song <song> or .song video <song>
     if (args.length > 1 && args[0].toLowerCase() === "video") {
       type = "video";
       songName = args.slice(1).join(" ");
@@ -35,16 +35,15 @@ module.exports = {
 
     if (!songName) {
       return api.sendMessage(
-        "Please provide a song name. Usage: .play [songName] or .play video [songName]",
+        "⚠️ Please provide a song name. Usage: .song [songName] or .song video [songName]",
         event.threadID,
         event.messageID
       );
     }
 
     const processingMessage = await api.sendMessage(
-      "✅ Processing your request. Please wait...",
+      "⏳ Processing your request. Please wait...",
       event.threadID,
-      null,
       event.messageID
     );
 
@@ -55,21 +54,18 @@ module.exports = {
         throw new Error("No results found for your search query.");
       }
 
-      // Get the top result
       const topResult = searchResults.videos[0];
       const videoUrl = `https://www.youtube.com/watch?v=${topResult.videoId}`;
 
-      // Set filename based on type
-      const safeFileName = topResult.title.replace(/[^a-zA-Z0-9 ]/g, ""); // Remove special characters
+      // Safe filename
+      const safeFileName = topResult.title.replace(/[^a-zA-Z0-9 ]/g, "").substring(0, 50);
       const filename = `${safeFileName}.${type === "audio" ? "mp3" : "mp4"}`;
       const downloadPath = path.join(__dirname, filename);
 
-      api.setMessageReaction("⌛", event.messageID, () => {}, true);
-
-      // Download with @distube/ytdl-core
+      // Download stream
       const stream = ytdl(videoUrl, {
         filter: type === "video" ? "videoandaudio" : "audioonly",
-        quality: type === "video" ? "highestvideo" : "highestaudio", // Fixed quality setting
+        quality: type === "video" ? "highestvideo" : "highestaudio",
         requestOptions: {
           headers: {
             "User-Agent":
@@ -78,54 +74,33 @@ module.exports = {
         },
       });
 
-      // Save the file
       const writeStream = fs.createWriteStream(downloadPath);
       stream.pipe(writeStream);
 
       await new Promise((resolve, reject) => {
         writeStream.on("finish", resolve);
         writeStream.on("error", reject);
-        stream.on("error", (error) => {
-          if (error.statusCode === 503) {
-            reject(
-              new Error(
-                "YouTube server unavailable (503). Please try again later."
-              )
-            );
-          } else if (error.message.includes("No such format found")) {
-            reject(
-              new Error(
-                "The requested format is not available for this video. Try another song or type."
-              )
-            );
-          } else {
-            reject(error);
-          }
-        });
+        stream.on("error", reject);
       });
 
-      api.setMessageReaction("✅", event.messageID, () => {}, true);
-
-      // Send the file via Messenger
+      // Send the file
       await api.sendMessage(
         {
+          body: `🎵 Title: ${topResult.title}\nHere is your ${type === "audio" ? "audio" : "video"} file.`,
           attachment: fs.createReadStream(downloadPath),
-          body: `🖤 Title: ${topResult.title}\n\nHere is your ${
-            type === "audio" ? "audio" : "video"
-          } 🎧:`,
         },
         event.threadID,
         () => {
-          fs.unlinkSync(downloadPath); // Clean up the file
-          api.unsendMessage(processingMessage.messageID); // Remove processing message
+          // Cleanup
+          fs.unlinkSync(downloadPath);
+          api.unsendMessage(processingMessage.messageID);
         },
         event.messageID
       );
     } catch (error) {
-      console.error(`Failed to download and send song: ${error.message}`);
-      api.setMessageReaction("❌", event.messageID, () => {}, true);
+      console.error("Download error:", error.message);
       api.sendMessage(
-        `Failed to download song: ${error.message}`,
+        `❌ Failed to download song: ${error.message}`,
         event.threadID,
         event.messageID
       );
