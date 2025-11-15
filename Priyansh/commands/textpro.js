@@ -17,6 +17,20 @@ module.exports.run = async function ({ api, event, args }) {
   try {
     const { threadID, messageID } = event;
 
+    // If user types 'textpro list', show all available styles
+    if (args[0] && args[0].toLowerCase() === "list") {
+      const styles = [
+        "layered","paper","pornhub","harrypotter","embossed","broken","blackpink",
+        "carbon","gradient","glue","neon","blood","firework","dropwater","imglitch",
+        "aglitch","glossy","bear","devil","christmas","magma","stone","light","berry",
+        "transformer","fiction","videogame","greenhorror","captainamerica","metallic",
+        "discovery","circuit","sketch","choror","spooky","skeleton"
+      ];
+
+      const message = "✨ Available TextPro Styles:\n" + styles.join(" | ");
+      return api.sendMessage(message, threadID, messageID);
+    }
+
     // No Args
     if (args.length === 0) {
       return api.sendMessage(
