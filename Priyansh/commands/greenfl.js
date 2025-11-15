@@ -1,4 +1,4 @@
-const API = "https://cjhvv2-3000.csb.app/api/ephoto/greenbrush?text=";
+const API = "https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/greenbrush?text=";
 module.exports.config = {
   name: "greenfl",
   version: "1.0.0",
