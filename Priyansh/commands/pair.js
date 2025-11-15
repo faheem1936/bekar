@@ -2,7 +2,7 @@ module.exports.config = {
   name: "pair",
   version: "1.0.1",
   hasPermssion: 0,
-  credits: "Talha Pathan",
+  credits: "faheem",
   description: "Pair love 💘",
   commandCategory: "For users",
   cooldowns: 5,
@@ -18,12 +18,12 @@ async function makeImage({ one, two }) {
   const path = global.nodemodule["path"];
   const axios = global.nodemodule["axios"];
   const jimp = global.nodemodule["jimp"];
-  const __root = path.resolve(__dirname, "cache", "canvas");
+  const __root = path.resolve(__dirname, "cache", "pairing");
 
   if (!fs.existsSync(__root)) fs.mkdirSync(__root, { recursive: true });
 
-  // 👉 Yaha apna template link lagao (1365x768 wali image)
-  const pairingImgUrl = "https://i.ibb.co/My5XyNHL/00e1483c731c917de50536f605c15264.jpg"; 
+  // Template
+  const pairingImgUrl = "https://i.ibb.co/My5XyNHL/00e1483c731c917de50536f605c15264.jpg";
   const baseImagePath = path.join(__root, "pairing_temp.png");
 
   try {
@@ -35,21 +35,24 @@ async function makeImage({ one, two }) {
   }
 
   let pairing_img = await jimp.read(baseImagePath);
-  let pathImg = path.join(__root, ⁠ pairing${one}${two}.png ⁠);
-  let avatarOne = path.join(__root, ⁠ avt${one}.png ⁠);
-  let avatarTwo = path.join(__root, ⁠ avt${two}.png ⁠);
 
-  // 👉 Avatar download karna
+  // final output image
+  let pathImg = path.join(__root, `pairing_${one}_${two}.png`);
+  let avatarOne = path.join(__root, `avt_${one}.png`);
+  let avatarTwo = path.join(__root, `avt_${two}.png`);
+
+  // Avatar download
   const downloadAvatar = async (id, filePath) => {
     try {
       let buffer = (await axios.get(
-        ⁠ https://graph.facebook.com/${id}/picture?width=512&height=512&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662 ⁠,
+        `https://graph.facebook.com/${id}/picture?width=512&height=512&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`,
         { responseType: 'arraybuffer' }
       )).data;
+
       fs.writeFileSync(filePath, Buffer.from(buffer, 'binary'));
     } catch (error) {
-      console.error(⁠ Avatar download error (user ${id}): ⁠, error.message);
-      throw new Error(⁠ Avatar ${id} ka download fail ❌ ⁠);
+      console.error(`Avatar download error (user ${id}):`, error.message);
+      throw new Error(`Avatar ${id} ka download fail ❌`);
     }
   };
 
@@ -59,10 +62,10 @@ async function makeImage({ one, two }) {
   let circleOne = await jimp.read(await circle(avatarOne));
   let circleTwo = await jimp.read(await circle(avatarTwo));
 
-  // 🔥 FIXED size & position - dono DPs circle ke andar fit ho jayengi
+  // Final placement
   pairing_img
-    .composite(circleOne.resize(175, 175), 43, 98)  // Left side circle
-    .composite(circleTwo.resize(175, 175), 419, 92); // Right side circle
+    .composite(circleOne.resize(175, 175), 43, 98)
+    .composite(circleTwo.resize(175, 175), 419, 92);
 
   let raw = await pairing_img.getBufferAsync("image/png");
   fs.writeFileSync(pathImg, raw);
@@ -76,9 +79,9 @@ async function makeImage({ one, two }) {
 
 async function circle(image) {
   const jimp = require("jimp");
-  image = await jimp.read(image);
-  image.circle();
-  return await image.getBufferAsync("image/png");
+  let img = await jimp.read(image);
+  img.circle();
+  return await img.getBufferAsync("image/png");
 }
 
 module.exports.run = async function ({ api, event }) {
@@ -97,26 +100,23 @@ module.exports.run = async function ({ api, event }) {
     let participantIDs = threadInfo.participantIDs.filter(id => id !== senderID);
 
     if (participantIDs.length === 0) {
-      return api.sendMessage("Group me aur koi member hi nahi mila pairing ke liye 🤷‍♂️", threadID, messageID);
+      return api.sendMessage("Group me pairing ke liye koi aur member nahi mila 🤷‍♂️", threadID, messageID);
     }
 
     const participantsInfo = await api.getUserInfo(participantIDs);
 
     let oppositeGenderIDs = [];
-    if (senderGender === 2) {
-      oppositeGenderIDs = participantIDs.filter(id => participantsInfo[id]?.gender === 1);
-    } else if (senderGender === 1) {
-      oppositeGenderIDs = participantIDs.filter(id => participantsInfo[id]?.gender === 2);
-    } else {
-      oppositeGenderIDs = participantIDs;
-    }
 
-    let randomID;
-    if (oppositeGenderIDs.length > 0) {
-      randomID = oppositeGenderIDs[Math.floor(Math.random() * oppositeGenderIDs.length)];
-    } else {
-      randomID = participantIDs[Math.floor(Math.random() * participantIDs.length)];
-    }
+    if (senderGender === 2)
+      oppositeGenderIDs = participantIDs.filter(id => participantsInfo[id]?.gender === 1);
+    else if (senderGender === 1)
+      oppositeGenderIDs = participantIDs.filter(id => participantsInfo[id]?.gender === 2);
+    else
+      oppositeGenderIDs = participantIDs;
+
+    let randomID = oppositeGenderIDs.length > 0
+      ? oppositeGenderIDs[Math.floor(Math.random() * oppositeGenderIDs.length)]
+      : participantIDs[Math.floor(Math.random() * participantIDs.length)];
 
     const partnerInfo = await api.getUserInfo(randomID);
     const name = partnerInfo[randomID].name;
@@ -126,24 +126,14 @@ module.exports.run = async function ({ api, event }) {
       { id: randomID, tag: name }
     ];
 
-    const one = senderID, two = randomID;
-
-    return makeImage({ one, two }).then(path =>
+    return makeImage({ one: senderID, two: randomID }).then(path =>
       api.sendMessage({
-        body: `‎𝐎𝐰𝐧𝐞𝐫 ➻  ❤𝐅𝐚𝐡𝐞𝐞𝐦 𝐀𝐤𝐡𝐭𝐚𝐫❤
+        body: `‎𝐎𝐰𝐧𝐞𝐫 ➻  ❤️‍🔥𝐅𝐚𝐡𝐞𝐞𝐦 𝐀𝐤𝐡𝐭𝐚𝐫❤️‍🔥
 
-⎯ⷨ͢⟵͇̽💗⃪꯭ⷯ༆⁂𝄄❘⍣ . . 𝐀𝐧𝐤𝐡𝐨 𝐦𝐞 𝐛𝐚𝐬𝐚𝐥𝐮 𝐭𝐮𝐣𝐡𝐤𝐨 ..
-𝐒𝐡𝐞𝐞𝐬𝐡𝐞 𝐦𝐞 𝐭𝐞𝐫𝐚𝐝𝐞𝐞𝐝𝐚𝐫 𝐡𝐨 ..
-𝐀𝐤 𝐰𝐚𝐪𝐭 𝐞𝐬𝐚 𝐚𝐲𝐞 𝐣𝐢𝐧𝐝𝐠𝐢 𝐦𝐞 ..
-𝐭𝐮𝐣𝐡𝐤𝐨 𝐯 𝐡𝐮𝐦𝐬𝐞 𝐩𝐲𝐚𝐫 𝐡𝐨 ..
+➻ 𝐒𝐞𝐧𝐝𝐞𝐫 ✦ ${namee}
+➻ 𝐏𝐚𝐢𝐫 ✦ ${name}
 
-⎯᪵⎯꯭̽𝆺꯭𝅥
-
-➻ 𝐍𝗔ɱɘ ✦ ${namee}
-
-➻ 𝐍𝗔ɱɘ ✦ ${name}
-
-🌸🍁The odds are: 〘${tle}%`,
+🌸🍁The odds are: 〘${tle}%〙`,
         mentions: arraytag,
         attachment: fs.createReadStream(path)
       }, threadID, () => fs.unlinkSync(path), messageID)
@@ -151,6 +141,6 @@ module.exports.run = async function ({ api, event }) {
 
   } catch (error) {
     console.error("Pair command error:", error.message);
-    return api.sendMessage("Error aaya pairing me ❌ Baad me try karo!", threadID, messageID);
+    return api.sendMessage("Pairing me error aaya ❌ Baad me try karna!", threadID, messageID);
   }
 };
