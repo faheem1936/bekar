@@ -1,5 +1,5 @@
 const API =
-  "https://cjhvv2-3000.csb.app/api/ephoto/circlefootball?text2=18&text=";
+  "https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/circlefootball?text2=18&text=";
 module.exports.config = {
   name: "football2",
   version: "1.0.0",
