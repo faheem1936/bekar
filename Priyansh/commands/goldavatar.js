@@ -1,4 +1,4 @@
-const API = "https://cjhvv2-3000.csb.app/api/ephoto/goldavatar?text=";
+const API = "https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/goldavatar?text=";
 module.exports.config = {
   name: "goldavatar",
   version: "30.0.10",
