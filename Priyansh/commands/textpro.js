@@ -6,7 +6,7 @@ module.exports.config = {
   name: "textpro",
   version: "1.0.0",
   hasPermssion: 0,
-  credits: "Faheem",
+  credits: "Faheem Akhtar",
   description: "Create TextPro logos using API",
   commandCategory: "Logo Maker",
   usages: "<style> <text1> | <text2>",
