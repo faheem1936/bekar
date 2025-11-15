@@ -1,4 +1,4 @@
-const API = "https://cjhvv2-3000.csb.app/api/ephoto/quotestatus?text2=My%20Love&text=";
+const API = "https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/quotestatus?text2=My%20Love&text=";
 module.exports.config = {
   name: "gflower",
   version: "1.0.0",
