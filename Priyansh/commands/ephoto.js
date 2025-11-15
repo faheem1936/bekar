@@ -60,379 +60,439 @@ module.exports.run = async function ({ api, event, args, Users }) {
   let pathImg = __dirname + `/cache/${type}_${name}.png`;
   let apiUrl, message;
 
+  // START SWITCH
   switch (type) {
     case "television":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/television?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/television?text=${name}`;
       message = "here's the [TELEVISION] Logo created:";
       break;
     case "glass":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/glasses?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/glasses?text=${name}`;
       message = "here's the [ GLASS ] Logo created:";
       break;
     case "blackpink":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/blackpink?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/blackpink?text=${name}`;
       message = "here's the [ BACKPINK ] Logo created:";
       break;
     case "neonblacpink":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/neonbp?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/neonbp?text=${name}`;
       message = "here's the [ NEON BLACK PINK] Logo Created:";
       break;
     case "coverpubg":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/coverpubg?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/coverpubg?text=${name}`;
       message = "here's the [ COVER PUBG ] - Logo Created:";
       break;
     case "greenbrush":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/greenbrush?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/greenbrush?text=${name}`;
       message = "here's the [ GREENBRUSH ] Logo Created:";
       break;
     case "blueneon":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/neonblue?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/neonblue?text=${name}`;
       message = "here's the [ BLUE NEON ] Logo created:";
       break;
     case "eraser":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/eraser?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/eraser?text=${name}`;
       message = "here's the [ ERASER ] Logo created:";
       break;
     case "dragonfire":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/dragonfire?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/dragonfire?text=${name}`;
       message = "here's the [ DRAGON FIRE ] Logo created:";
       break;
     case "bulb":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/incandescent?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/incandescent?text=${name}`;
       message = "here's the [ BULB ] Logo created:";
       break;
     case "typography":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/typography?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/typography?text=${name}`;
       message = "here's the [ TYPOGRAPHY ] Logo created:";
       break;
     case "leaves":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/letters?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/letters?text=${name}`;
       message = "here's the [ LEAVES ] Logo created:";
       break;
     case "cloth":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/cloth?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/cloth?text=${name}`;
       message = "here's the [ CLOTH ] Logo created:";
       break;
     case "graffiti":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/graffiti?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/graffiti?text=${name}`;
       message = "here's the [ GRAFFITI ] Logo created:";
       break;
     case "star":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/metals?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/metals?text=${name}`;
       message = "here's the [ STAR ] Logo created:";
       break;
     case "typography2":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/typography2?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/typography2?text=${name}`;
       message = "here's the [ TYPOGRAPHY 2 ] Logo created:";
       break;
     case "nightstars":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/nightstars?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/nightstars?text=${name}`;
       message = "here's the [ NIGHT STARS ] Logo created:";
       break;
     case "cloud":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/cloud?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/cloud?text=${name}`;
       message = "here's the [ CLOUD ] Logo created:";
       break;
     case "papercut":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/caper?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/caper?text=${name}`;
       message = "here's the [ CUT PAPER ] Logo created:";
       break;
     case "horror":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/horror?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/horror?text=${name}`;
       message = "here's the [ HORROR ] Logo created:";
       break;
     case "sunlight":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/sunlight?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/sunlight?text=${name}`;
       message = "here's the [ sunlight ] Logo created:";
       break;
     case "pig":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/pig?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/pig?text=${name}`;
       message = "here's the [ PIG ] Logo created:";
       break;
     case "Halloween":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/hallowen?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/hallowen?text=${name}`;
       message = "here's the [ HALLOWEEN ] Logo created:";
       break;
+
     case "leafgrafy":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/leafgraphy?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/leafgraphy?text=${name}`;
       message = "here's the [ LEAFGRAFY ] Logo created:";
       break;
     case "water":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/water?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/water?text=${name}`;
       message = "here's the [ WATER ] Logo created:";
       break;
     case "animate":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/crank?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/crank?text=${name}`;
       message = "here's the [ ANIMATE ] Logo created:";
       break;
     case "puppy":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/puppy?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/puppy?text=${name}`;
       message = "here's the [ PUPPY ] Logo created:";
       break;
     case "foggy":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/foggy?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/foggy?text=${name}`;
       message = "here's the [ FOGGY ] Logo created:";
       break;
     case "flag":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/american?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/american?text=${name}`;
       message = "here's the [ FLAG ] Logo created:";
       break;
     case "arrow":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/arrow?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/arrow?text=${name}`;
       message = "here's the [ ARROW ] Logo created:";
       break;
     case "arrow2":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/arrow2?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/arrow2?text=${name}`;
       message = "here's the [ ARROW 2 ] Logo created:";
       break;
+
     case "hacker":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/anonymous?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/anonymous?text=${name}`;
       message = "here's the [ HACKER ] Logo created:";
       break;
+
     case "avatar":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/aov?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/aov?text=${name}`;
       message = "here's the [ AVATAR ] Logo created:";
       break;
+
     case "moblegend":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/ml?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/ml?text=${name}`;
       message = "here's the [ MOB LEGEND ] Logo created:";
       break;
+
     case "warface":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/warface?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/warface?text=${name}`;
       message = "here's the [ WARFACE ] Logo created:";
       break;
+
     case "foggy2":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/window?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/window?text=${name}`;
       message = "here's the [ FOGGY 2 ] Logo created:";
       break;
+
     case "gammergirl":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/gamergirl?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/gamergirl?text=${name}`;
       message = "here's the [ GAMMERGIRL ] Logo created:";
       break;
+
     case "teamlogo":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/teamlogo?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/teamlogo?text=${name}`;
       message = "here's the [ TEAMLOGO ] Logo created:";
       break;
+
     case "beach":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/beach?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/beach?text=${name}`;
       message = "here's the [ BEACH ] Logo created:";
       break;
+
     case "neonstyle":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/neonstyle?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/neonstyle?text=${name}`;
       message = "here's the [ NEON STYLE ] Logo created:";
       break;
+
     case "gaminglogo":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/gaminglogo?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/gaminglogo?text=${name}`;
       message = "here's the [ GAMING LOGO ] Logo created:";
       break;
+
     case "game":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/fpsgame?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/fpsgame?text=${name}`;
       message = "here's the [ GAME ] Logo created:";
       break;
+
     case "vibrant":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/vibrant?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/vibrant?text=${name}`;
       message = "here's the [ VIBRANT ] Logo created:";
       break;
+
     case "blueneon":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/blueneon2?text=FAHEEM${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/blueneon2?text=FAHEEM${name}`;
       message = "here's the [ BLUE NEON ] Logo created:";
       break;
+
     case "steelmetal":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/steelmetal?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/steelmetal?text=${name}`;
       message = "here's the [ STEELMETAL ] Logo created:";
       break;
+
     case "mascot":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/circlemascot?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/circlemascot?text=${name}`;
       message = "here's the [ MASCOT ] Logo created:";
       break;
+
     case "luxurylogo":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/luxuarylogo?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/luxuarylogo?text=${name}`;
       message = "here's the [ LUXURY LOGO ] Logo created:";
       break;
+
     case "star":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/printname?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/printname?text=${name}`;
       message = "here's the [ STAR ] Logo created:";
       break;
+
     case "minimal":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/minimal?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/minimal?text=${name}`;
       message = "here's the [ MINIMAL ] Logo created:";
       break;
+
     case "galaxy":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/galaxy?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/galaxy?text=${name}`;
       message = "here's the [ GALAXY ] Logo created:";
       break;
+
     case "goldavatar":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/goldavatar?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/goldavatar?text=${name}`;
       message = "here's the [ GOLD AVATAR ] Logo created:";
       break;
-    case "cloth":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/cloth?text=${name}`;
-      message = "here's the [ CLOTH ] Logo created:";
-      break;
+
     case "team2":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/team2?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/team2?text=${name}`;
       message = "here's the [ TEAM 2 ] Logo created:";
       break;
+
     case "shield":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/sheild?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/sheild?text=${name}`;
       message = "here's the [ SHIELD ] Logo created:";
       break;
+
     case "angel":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/angel2?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/angel2?text=${name}`;
       message = "here's the [ ANGEL ] Logo created:";
       break;
+
     case "queen":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/queen?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/queen?text=${name}`;
       message = "here's the [ QUEEN ] Logo created:";
       break;
+
     case "gaminglogo2":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/gaminglogo2?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/gaminglogo2?text=${name}`;
       message = "here's the [ GAMING LOGO 2 ] Logo created:";
       break;
+
     case "zodiac":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/zodiac?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/zodiac?text=${name}`;
       message = "here's the [ ZODIAC ] Logo created:";
       break;
+
     case "steel2":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/steel2?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/steel2?text=${name}`;
       message = "here's the [ STEEL 2 ] Logo created:";
       break;
+
     case "pubg2":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/pubg2?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/pubg2?text=${name}`;
       message = "here's the [ PUBG 2 ] Logo created:";
       break;
+
     case "pubg3":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/pubg3?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/pubg3?text=${name}`;
       message = "here's the [ PUBG 3 ] Logo created:";
       break;
+
     case "fbcover":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/facebookcover4?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/facebookcover4?text=${name}`;
       message = "here's the [ FBCOVER ] Logo created:";
       break;
+
     case "fbcover2":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/facebookcover5?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/facebookcover5?text=${name}`;
       message = "here's the [ FBCOVER 2 ] Logo created:";
       break;
+
     case "fbcover3":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/facebookcover6?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/facebookcover6?text=${name}`;
       message = "here's the [ FBCOVER 3 ] Logo created:";
       break;
+
     case "fbcover4":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/facebookcover7?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/facebookcover7?text=${name}`;
       message = "here's the [ FBCOVER 4 ] Logo created:";
       break;
+
     case "fbcover5":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/facebookcover8?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/facebookcover8?text=${name}`;
       message = "here's the [ FBCOVER 5 ] Logo created:";
       break;
+
     case "fbcover6":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/facebookcover9?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/facebookcover9?text=${name}`;
       message = "here's the [ FBCOVER 6 ] Logo created:";
       break;
+
     case "fbcover7":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/facebookcover11?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/facebookcover11?text=${name}`;
       message = "here's the [ FBCOVER 7 ] Logo created:";
       break;
+
     case "fbcover8":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/facebookcover12?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/facebookcover12?text=${name}`;
       message = "here's the [ FBCOVER 8 ] Logo created:";
       break;
+
     case "tattoo":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/tatto?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/tatto?text=${name}`;
       message = "here's the [ TATTOO ] Logo created:";
       break;
+
     case "moblegend2":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/ml2?text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/ml2?text=${name}`;
       message = "here's the [ MOB LEGEND 2 ] Logo created:";
       break;
+
     case "neonstyle2":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/neonstyle?url=https://i.imgur.com/BTPUTRQ.jpg&text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/neonstyle?url=https://i.imgur.com/BTPUTRQ.jpg&text=${name}`;
       message = "here's the [ NEONSTYLE 2 ] Logo created:";
       break;
+
     case "arena":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/arena?url=https://i.imgur.com/BTPUTRQ.jpg&text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/arena?url=https://i.imgur.com/BTPUTRQ.jpg&text=${name}`;
       message = "here's the [ ARENA ] Logo created:";
       break;
+
     case "lovecard":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/lovecard2?url=https://i.imgur.com/BTPUTRQ.jpg&text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/lovecard2?url=https://i.imgur.com/BTPUTRQ.jpg&text=${name}`;
       message = "here's the [ LOVE CARD ] Logo created:";
       break;
+
     case "lovecard2":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/lovecard3?url=https://i.imgur.com/BTPUTRQ.jpg&text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/lovecard3?url=https://i.imgur.com/BTPUTRQ.jpg&text=${name}`;
       message = "here's the [ LOVE CARD 2 ] Logo created:";
       break;
+
     case "lovecard3":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/lovecard4?url=https://i.imgur.com/BTPUTRQ.jpg&text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/lovecard4?url=https://i.imgur.com/BTPUTRQ.jpg&text=${name}`;
       message = "here's the [ LOVE CARD 3 ] Logo created:";
       break;
+
     case "heartwing":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/winggif?url=https://i.imgur.com/BTPUTRQ.jpg&text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/winggif?url=https://i.imgur.com/BTPUTRQ.jpg&text=${name}`;
       message = "here's the [ HEART WING ] Logo created:";
       break;
+
     case "cake":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/cake2?url=https://i.imgur.com/BTPUTRQ.jpg&text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/cake2?url=https://i.imgur.com/BTPUTRQ.jpg&text=${name}`;
       message = "here's the [ CAKE ] Logo created:";
       break;
+
     case "cake2":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/cake3?url=https://i.imgur.com/BTPUTRQ.jpg&text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/cake3?url=https://i.imgur.com/BTPUTRQ.jpg&text=${name}`;
       message = "here's the [ CAKE 2 ] Logo created:";
       break;
+
     case "cake3":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/cake4?url=https://i.imgur.com/BTPUTRQ.jpg&text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/cake4?url=https://i.imgur.com/BTPUTRQ.jpg&text=${name}`;
       message = "here's the [ CAKE 3 ] Logo created:";
       break;
+
     case "cake4":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/cake5?url=https://i.imgur.com/BTPUTRQ.jpg&text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/cake5?url=https://i.imgur.com/BTPUTRQ.jpg&text=${name}`;
       message = "here's the [ CAKE 4 ] Logo created:";
       break;
+
     case "cake5":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/cake6?url=https://i.imgur.com/BTPUTRQ.jpg&text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/cake6?url=https://i.imgur.com/BTPUTRQ.jpg&text=${name}`;
       message = "here's the [ CAKE 5 ] Logo created:";
       break;
+
     case "cake6":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/cake7?url=https://i.imgur.com/BTPUTRQ.jpg&text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/cake7?url=https://i.imgur.com/BTPUTRQ.jpg&text=${name}`;
       message = "here's the [ CAKE 6 ] Logo created:";
       break;
+
     case "cup":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/cup?url=https://i.imgur.com/BTPUTRQ.jpg&text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/cup?url=https://i.imgur.com/BTPUTRQ.jpg&text=${name}`;
       message = "here's the [ CUP ] Logo created:";
       break;
+
     case "flaming":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/flaming?url=https://i.imgur.com/BTPUTRQ.jpg&text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/flaming?url=https://i.imgur.com/BTPUTRQ.jpg&text=${name}`;
       message = "here's the [ FLAMING ] Logo created:";
       break;
+
     case "blood":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/blood?url=https://i.imgur.com/BTPUTRQ.jpg&text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/blood?url=https://i.imgur.com/BTPUTRQ.jpg&text=${name}`;
       message = "here's the [ BLOOD ] Logo created:";
       break;
+
     case "blood2":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/blood2?url=https://i.imgur.com/BTPUTRQ.jpg&text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/blood2?url=https://i.imgur.com/BTPUTRQ.jpg&text=${name}`;
       message = "here's the [ BLOOD 2 ] Logo created:";
       break;
+
     case "crossfire":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/crossfire?url=https://i.imgur.com/BTPUTRQ.jpg&text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/crossfire?url=https://i.imgur.com/BTPUTRQ.jpg&text=${name}`;
       message = "here's [ CROSSFIRE ] Logo created:";
       break;
+
     case "freefire":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/freefire3?url=https://i.imgur.com/BTPUTRQ.jpg&text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/freefire3?url=https://i.imgur.com/BTPUTRQ.jpg&text=${name}`;
       message = "here's the [ FREEFIRE ] Logo created:";
       break;
+
     case "overwatch":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/overwatch2?url=https://i.imgur.com/BTPUTRQ.jpg&text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/overwatch2?url=https://i.imgur.com/BTPUTRQ.jpg&text=${name}`;
       message = "here's the [ OVER WATCH ] Logo created:";
       break;
+
     case "lolavatar":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/lolnew?url=https://i.imgur.com/BTPUTRQ.jpg&text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/lolnew?url=https://i.imgur.com/BTPUTRQ.jpg&text=${name}`;
       message = "here's the [ LOL AVATAR ] Logo created:";
       break;
+
     case "dota":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/dota?url=https://i.imgur.com/BTPUTRQ.jpg&text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/dota?url=https://i.imgur.com/BTPUTRQ.jpg&text=${name}`;
       message = "here's the [ DOTA ] Logo created:";
       break;
+
     case "exposure":
-      apiUrl = `https://site--faaheem--hzpgqj8xq64k.code.run/api/ephoto/doubleexpouser?url=https://i.imgur.com/BTPUTRQ.jpg&text=${name}`;
+      apiUrl = `https://new--faheem-logo-api--89q4vtp4hz4m.code.run/api/ephoto/doubleexpouser?url=https://i.imgur.com/BTPUTRQ.jpg&text=${name}`;
       message = "here's the [ EXPOSURE ] Logo created:";
       break;
+
     default:
       return api.sendMessage(
         `Invalid logo type! Use .Ephoto list 1 to see the list of Ephoto logos.`,
@@ -441,14 +501,17 @@ module.exports.run = async function ({ api, event, args, Users }) {
       );
   }
 
+  // PROCESS IMAGE
   api.sendMessage(
     "Processing your Ephoto logo, please wait...",
     threadID,
     messageID
   );
+
   let response = await axios.get(apiUrl, { responseType: "arraybuffer" });
   let logo = response.data;
   fs.writeFileSync(pathImg, Buffer.from(logo, "utf-8"));
+
   return api.sendMessage(
     {
       body: message,
